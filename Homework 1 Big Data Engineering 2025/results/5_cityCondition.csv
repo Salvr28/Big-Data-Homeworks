@@ -1,0 +1,1181 @@
+,City,Condition,NumStudies per City/Condition
+0,Pavia,AL Amyloidosis,6
+1,Milan,ALS,3
+2,Naples,Acid Maltase Deficiency,2
+3,Orlando,Acquired Immunodeficiency Syndrome,2
+4,Yorkville,Acral Lentiginous Melanoma,2
+5,Brno,Acute Ischemic Stroke,2
+6,Rome,Acute Myeloid Leukemia,29
+7,Brussels,Acute Severe Respiratory Failure,2
+8,Barcelona,Acute-On-Chronic Liver Failure,2
+9,Ann Arbor,Adenocarcinoma,2
+10,Gainesville,Adenovirus Infection,2
+11,Rome,Adult Solid Tumor,2
+12,Barcelona,Advanced Breast Cancer,6
+13,Milan,Advanced Colorectal Cancer,2
+14,Naples,Advanced Hepatocellular Carcinoma (HCC),2
+15,Ann Arbor,Advanced Lung Non-Squamous Non-Small Cell Carcinoma,2
+16,Milan,Advanced Malignancies,4
+17,Clermont-Ferrand,Advanced Renal Cell Carcinoma,2
+18,Milan,Advanced Solid Tumors,11
+19,Toronto,Advanced Systemic Mastocytosis,2
+20,Kuala Lumpur,Alagille Syndrome,2
+21,Aurora,Aldosteronism,2
+22,Dallas,Allogeneic Hematopoietic Cell Transplant,2
+23,Milan,Alzheimer Disease,9
+24,London,Alzheimer's Disease,18
+25,Barcelona,"Alzheimers Disease, Familial",3
+26,Milan,Amyotrophic lateral sclerosis,2
+27,Wroclaw,Anaesthesia,2
+28,Petoskey,Anal Canal Cloacogenic Carcinoma,2
+29,Burbank,Anal Margin Squamous Cell Carcinoma,2
+30,St Louis,Anaplastic Astrocytoma,2
+31,Parma,"Anesthesia,Spinal",2
+32,Rome,Anesthesiology Management,2
+33,Chicago,"Aneurysm, Brain",2
+34,Chicago,Angelman Syndrome,2
+35,Bologna,Ankle Osteoarthritis,4
+36,Bologna,Ankle Sprains,2
+37,Bologna,"Aortic Aneurysm, Thoracic",3
+38,Bordeaux,Aortic Stenosis,2
+39,Toulouse,Aortic Valve Replacement,2
+40,Amsterdam,Arrhythmia,2
+41,Milan,Arterial Hypertension,2
+42,Florence,Arthritis,2
+43,Rome,"Arthritis, Psoriatic",6
+44,Bologna,"Arthroplasty, Replacement, Hip",2
+45,Parma,Aspergillosis,2
+46,Leiden,Atherosclerotic Cardiovascular Disease,4
+47,Barcelona,Atopic Dermatitis,14
+48,Milan,Atrial Fibrillation Paroxysmal,2
+49,Iasi,Attention Deficit Hyperactivity Disorder (ADHD),2
+50,Milan,Autoimmune Hemolytic Anemia,2
+51,Pavia,Autoimmune Pulmonary Alveolar Proteinosis,4
+52,Naples,Autosomal Dominant Polycystic Kidney Disease,2
+53,Madrid,B-Cell Chronic Lymphocytic Leukemia,2
+54,Seville,B-cell Lymphoma,2
+55,Brisbane,B-cell Malignancies,2
+56,Treviso,BCR-ABL Positive,2
+57,Hackensack,BK Virus Infection,2
+58,Padova,Bariatric Surgery Candidate,2
+59,Brescia,Basal Cell Carcinoma,4
+60,Milan,Becker Muscular Dystrophy,4
+61,Barcelona,Behçet Disease,2
+62,Genoa,Biliopancreatic Diversion,2
+63,Milan,Bladder Cancer,15
+64,Bologna,Bone Metastases,6
+65,Rome,Brain Infarction,2
+66,Milan,Brain Metastases,2
+67,Milan,Brain Tumor,2
+68,Milan,Breast Cancer Metastatic,2
+69,New York,Breast Cancer Stage II,2
+70,Atlantic City,Breast Ductal Carcinoma In Situ,2
+71,Bordeaux,Breast Neoplasm,2
+72,Milan,Breast Neoplasms,13
+73,Ravenna,Bronchial Neoplasms,2
+74,Leuven,Bronchiectasis,2
+75,Trieste,Bronchiolitis,3
+76,Rome,COPD,4
+77,Modena,COPD Exacerbation,2
+78,Verona,COVID-19 Pneumonia,4
+79,Milan,Cancer,28
+80,Milan,Cancer of Head and Neck,3
+81,Leuven,Candidemia,4
+82,Brussels,"Candidiasis, Invasive",2
+83,Rome,"Carcinoma, Bronchogenic",3
+84,Madrid,"Carcinoma, Hepatocellular",8
+85,Milan,"Carcinoma, Ovarian Epithelial",3
+86,Barcelona,"Carcinoma, Renal Cell",8
+87,Düsseldorf,"Carcinoma, Transitional Cell",2
+88,Milan,Cardiac Output Measurement,2
+89,Rome,Cardiac Surgery,3
+90,Pavia,Cardiac amyloidosis,2
+91,Tübingen,Cardiogenic Shock,2
+92,Rome,Cardiovascular Disease,7
+93,Barcelona,Cardiovascular Diseases,11
+94,Milan,Celiac Disease,10
+95,Rimini,Cell Damage,2
+96,The Bronx,Cervical Carcinoma,2
+97,Stanford,Charcot Marie Tooth Disease,2
+98,Barcelona,Chemotherapy-induced Peripheral Neuropathy,4
+99,Bologna,Chondrosarcoma,2
+100,Rome,Chronic Cluster Headache,3
+101,Manchester,Chronic Cough,2
+102,Naples,Chronic Heart Failure,3
+103,Seoul,Chronic Hepatitis B,5
+104,Genova,Chronic Inflammatory Demyelinating Polyradiculoneuropathy,4
+105,Padova,Chronic Iron Overload,2
+106,Milan,Chronic Kidney Disease,11
+107,Cosenza,Chronic Kidney Diseases,2
+108,Milan,Chronic Lymphocytic Leukemia,28
+109,Milan,Chronic Migraine,6
+110,Rome,Chronic Myeloid Leukemia,18
+111,Sassari,Chronic Nephropathy,2
+112,Turin,Chronic Renal Failure,3
+113,Rome,Chronic infection with HIV,2
+114,Rome,Classical Hodgkin Lymphoma,3
+115,Twin Falls,Clinical Stage II HPV-Mediated (p16-Positive) Oropharyngeal Carcinoma AJCC v8,2
+116,Sioux Falls,Clinical Stage IV Cutaneous Melanoma AJCC v8,2
+117,Bologna,Colonoscopy,3
+118,Milan,Colorectal Cancer,30
+119,Milan,Colorectal Cancer Metastatic,4
+120,Naples,Colorectal Cancer Stage IV,2
+121,Milan,Colorectal Neoplasm,2
+122,Padova,Colorectal Neoplasms Malignant,2
+123,Cuneo,Colorectal Surgery,2
+124,London,Complete Response,2
+125,Bologna,"Complete Tear, Knee, Anterior Cruciate Ligament",2
+126,Bologna,Complication of Surgical Procedure,3
+127,Milan,Complications,12
+128,Milan,Congenital Diaphragmatic Hernia,3
+129,Aurora,Coronary Arteriosclerosis,2
+130,Verona,Coronavirus Disease 2019,2
+131,Bologna,Coronavirus Infection,3
+132,Rome,Craniotomy,2
+133,New York,Crohn's Disease,29
+134,Bologna,Cutaneous T Cell Lymphoma,2
+135,Verona,Cystic Fibrosis,26
+136,Valencia,Cytomegalovirus (CMV),2
+137,Paris,Cytomegalovirus Infection,2
+138,Brescia,Dementia,4
+139,Madrid,"Depressive Disorder, Major",5
+140,Milan,"Depressive Disorder, Treatment-Resistant",2
+141,Kosice-Saca,Dermatitis,2
+142,Barcelona,Dermatomyositis,2
+143,Milan,Diabetes Mellitus,6
+144,Madrid,Diffuse Cutaneous Systemic Sclerosis,5
+145,Aurora,Diffuse Intrinsic Pontine Glioma,2
+146,Modena,Diffuse Large B Cell Lymphoma (DLBCL),2
+147,Milan,Diffuse Large B-Cell Lymphoma,9
+148,Rozzano,Diffuse Large B-cell Lymphoma Recurrent,2
+149,Milan,Diffuse Large Cell Lymphoma,2
+150,Paris,Digestive System Neoplasm,2
+151,London,Digital Ulcers,2
+152,Genoa,Disease,2
+153,Milan,Dry Eye Disease,3
+154,Leuven,Duchenne Muscular Dystrophy,12
+155,Milan,Dysbiosis,2
+156,Pavia,Dysglycemia,2
+157,Palermo,Dyslipidemia,5
+158,Verona,Dyslipidemias,2
+159,Bologna,Dysplasia,2
+160,Brisbane,EPP,2
+161,Padova,Elderly Metastatic Colorectal Cancer Patients,3
+162,Heidelberg,Emphysema,2
+163,Milan,Encephalitis,2
+164,Milan,Endocrine disorders,3
+165,St Louis,Endometrial Carcinoma,3
+166,Milan,Endometriosis,11
+167,Genoa,Endometriosis of Colon,2
+168,Genoa,"Endometriosis, Rectum",6
+169,Milan,Endometriosis-related Pain,4
+170,Milan,Episodic Migraine,5
+171,Milan,Erythrocyte Transfusion,2
+172,Bethesda,Esophageal Adenocarcinoma,2
+173,Padova,Esophageal Cancer,4
+174,Seoul,Esophageal Squamous Cell Carcinoma,4
+175,Bologna,Ewing Sarcoma,4
+176,Bologna,Ewing Sarcoma of Bone,2
+177,Milan,Ewing's Sarcoma,3
+178,Manchester,FGFR2 Amplification,2
+179,Hamilton,FIGO Stage III-IV,2
+180,Columbus,Facioscapulohumeral Muscular Dystrophy (FSHD),2
+181,Rome,Fallopian Tube Carcinoma,2
+182,Cleveland,Fallopian Tube Neoplasms,2
+183,Sydney,Familial Primary Pulmonary Hypertension,3
+184,Bologna,Flat Foot,2
+185,Pavia,Focal Segmental Glomerulosclerosis,3
+186,Busan,Follicular Lymphoma (FL),4
+187,London,Friedreich Ataxia,3
+188,Paris,Friedreich's Ataxia,3
+189,Madrid,Frontotemporal Dementia,3
+190,Bari,Functional Constipation,2
+191,Jackson,Fungal Infection,2
+192,Palermo,GIST,3
+193,Milan,GM1 Gangliosidosis,2
+194,Beijing,Gallbladder Cancer,2
+195,Milan,Gastric Cancer,22
+196,São Paulo,Gastric Neoplasms,2
+197,Seoul,Gastroesophageal Junction Cancer,3
+198,Bologna,Gastroesophageal Reflux,2
+199,Boston,Gastrointestinal Disease,2
+200,Boston,Gastrointestinal Stromal Tumors,3
+201,Chicago,"Gaucher Disease, Type 1",2
+202,St Louis,"Genetic Diseases, X-Linked",2
+203,Palermo,Genital Warts,2
+204,Bologna,Genu Varum,2
+205,Paris,Geographic Atrophy,7
+206,Milan,Gestational Diabetes,2
+207,Brussels,Giant Cell Arteritis,2
+208,Rome,Giant Cell Tumor of Tendon Sheath,2
+209,Houston,Glioma,3
+210,Genoa,Glomerulonephritis and nephrotic syndrome,2
+211,Rotterdam,Glycogen Storage Disease Type II,2
+212,Duarte,Graft Versus Host Disease,2
+213,Milan,Growth Hormone Deficiency,2
+214,Naples,Gynecologic Cancer,4
+215,Ferrara,HER-2 Positive Breast Cancer,3
+216,Meldola,HER2-positive Breast Cancer,2
+217,Bend,HER2/Neu Negative,2
+218,Milan,HIV Infection,6
+219,Modena,HIV infection,2
+220,Milan,Haemophilia A Factor VIII,2
+221,Bologna,Hallux Valgus,2
+222,Milan,Head and Neck Cancer,18
+223,Barcelona,Head and Neck Neoplasms,5
+224,Milan,Healthy Subjects,2
+225,Gothenburg,Heart Arrest,2
+226,Pisa,Heart Failure With Preserved Ejection Fraction,2
+227,Naples,Heart Failure With Reduced Ejection Fraction,4
+228,Bologna,Heart Transplantation,4
+229,Leipzig,Hematological Disease,2
+230,Bologna,Hemodialysis Complication,2
+231,Milan,Hemophilia A,19
+232,Valencia,Hemophilia A With Inhibitors,2
+233,Palo Alto,Hepatic Veno-Occlusive Disease,2
+234,London,Hepatitis B,5
+235,Milan,Hepatitis D,2
+236,Bucuresti,Hepatitis Delta Virus,2
+237,Milan,Hepatocellular Carcinoma,16
+238,Tianjin,Hepatocellular Carcinoma (HCC),2
+239,Barcelona,Hereditary Angioedema (HAE),2
+240,London,"Hernia, Abdominal",2
+241,Ancona,Hilar Lymphadenopathy,2
+242,Bologna,Hip,2
+243,Brescia,Hormone Receptor Positive Breast Carcinoma,2
+244,Florence,Hormone Receptor Positive Tumor,2
+245,Nahariya,Hot Flashes,2
+246,Naples,Human Epidermal Growth Factor 2 Negative Carcinoma of Breast,3
+247,Ulm,Huntington Disease,4
+248,Aurora,Hyperaldosteronism,2
+249,Bologna,Hypercholesterolemia,11
+250,Bielefeld,"Hypersensitivity, Immediate",2
+251,Milan,Hypertension,9
+252,Heidelberg,"Hypertension, Pulmonary",7
+253,Florence,Hypertrophic Cardiomyopathy,5
+254,Chicago,Hypoparathyroidism,3
+255,Turin,Hypopituitarism,2
+256,San Francisco,INI1-negative Tumors,2
+257,Leuven,IPF,2
+258,Bologna,Idiopathic pulmonary fibrosis,2
+259,Hinsdale,IgA Nephropathy,2
+260,Rome,Iliac Artery Stenosis,2
+261,Saint Albans,Immunoglobulin A Nephropathy,2
+262,Cambridge,Indolent Systemic Mastocytosis,2
+263,Berlin,"Influenza, Human",2
+264,Bologna,"Instability, Joint",2
+265,Padova,Intracranial Hypertension,2
+266,Barcelona,Intrahepatic Cholangiocarcinoma,3
+267,Jackson,Intraventricular Hemorrhage,2
+268,Saginaw,Invasive Breast Carcinoma,5
+269,Orbassano,Iron Overload Due to Repeated Red Blood Cell Transfusions,2
+270,Genoa,Juvenile Idiopathic Arthritis,6
+271,Bari,"Kidney Disease, Chronic",2
+272,Barcelona,"Kidney Failure, Chronic",3
+273,Bologna,Knee Chondropathy,2
+274,Bologna,Knee Osteoarthritis,14
+275,Irvine,LOPD,2
+276,Monza,Laparoscopy,2
+277,Turin,Left Main Coronary Artery Disease,3
+278,Milan,Leiomyosarcoma,7
+279,Melbourne,Lennox Gastaut Syndrome (LGS),2
+280,Palermo,"Leukemia, Lymphoblastic, Acute",2
+281,Valencia,"Leukemia, Myeloid, Acute",9
+282,Salamanca,"Leukemia, Myelomonocytic, Chronic",5
+283,Manchester,Limited Stage Small Cell Lung Cancer,2
+284,Milan,"Liposarcoma, Dedifferentiated",2
+285,Milan,"Liposarcoma, Myxoid",2
+286,Padova,Liver Failure,2
+287,Milan,Liver Neoplasms,2
+288,Salerno,Locally Advanced Malignant Neoplasm,2
+289,Rome,Locally Advanced Pancreatic Cancer,2
+290,Brescia,Locally Advanced or Metastatic Breast Cancer,2
+291,Bologna,"Loosening, Prosthesis",2
+292,Bologna,Low Back Pain,4
+293,Perth,Low-grade Glioma,2
+294,Milan,Lung Cancer Metastatic,2
+295,Pavia,"Lung Diseases, Obstructive",2
+296,Naples,Lung Neuroendocrine Neoplasm,2
+297,Milan,Lung Transplant,6
+298,Milan,Lung Transplant Rejection,2
+299,Mainz,"Lupus Erythematosus, Systemic",4
+300,Mexico City,Lupus Nephritis,4
+301,Lyon,"Lymphoma, Large-Cell, Anaplastic",2
+302,Catania,"Lymphoma, T-Cell, Peripheral",2
+303,Atlanta,Lymphoplasmacytic Lymphoma,2
+304,Rome,Lymphoproliferative Disorders,2
+305,Pittsburgh,Lysosomal Acid Lipase Deficiency,2
+306,Rotterdam,Lysosomal Storage Diseases,2
+307,Milan,Macular Edema,3
+308,Bologna,Maffucci Syndrome,2
+309,Milan,Major Depressive Disorder,5
+310,Milan,Malignant Melanoma,12
+311,Seattle,Malignant Rhabdoid Tumor of Ovary,2
+312,Milan,Malnutrition,5
+313,Milan,Medication Overuse Headache,2
+314,Boston,Medullary Thyroid Cancer,5
+315,Milan,Melanoma,42
+316,Meldola,Melanoma Stage III,2
+317,Essen,Melanoma Stage IV,2
+318,Bologna,Meniscus Disorder,2
+319,Bologna,Meniscus Lesion,2
+320,Houston,Mesothelioma,3
+321,Aviano,Metastatic Castration-resistant Prostate Cancer,2
+322,Villejuif,Metastatic Lung Cancer,2
+323,Cleveland,Metastatic Malignant Neoplasm in the Brain,4
+324,Madrid,Metastatic Non Small Cell Lung Cancer,3
+325,Seoul,Metastatic Non-Small Cell Lung Cancer,2
+326,Milan,Metastatic Renal Cell Carcinoma,7
+327,Barcelona,Metastatic Solid Tumors,3
+328,Bethesda,Metastatic Urothelial Cancer,2
+329,New York,Metastatic Urothelial Carcinoma,4
+330,Milan,Migraine,13
+331,Milan,Migraine Headache,2
+332,Milan,Mitochondrial Diseases,2
+333,Milan,Mitral Regurgitation,4
+334,Trieste,Molar Incisor Hypomineralization,2
+335,Berlin,"Multiple Sclerosis, Relapsing-Remitting",7
+336,Milan,Multiple System Atrophy,4
+337,Bologna,Multiple myeloma,4
+338,London,Muscle Spasticity,2
+339,Florence,Muscle-Invasive Bladder Carcinoma,2
+340,Milan,Muscle-invasive Bladder Cancer,2
+341,Milan,"Muscular Atrophy, Spinal",8
+342,Iowa City,"Muscular Disorders, Atrophic",2
+343,Milan,Muscular Dystrophies,3
+344,Genoa,Myelodysplasia,2
+345,Boston,Myelodysplastic Syndromes (MDS),2
+346,Milan,Myelofibrosis,15
+347,Milan,Myeloproliferative Disease,2
+348,Bologna,Myeloproliferative Disorders,3
+349,Bologna,Myeloproliferative Neoplasm,4
+350,Rome,NAFLD,2
+351,Budapest,NASH - Nonalcoholic Steatohepatitis,2
+352,Baltimore,NHL,2
+353,Pavia,"NSCLC, Stage III",2
+354,Rome,NSTEMI - Non-ST Segment Elevation MI,2
+355,Milan,Nausea,2
+356,Bologna,Necrotizing Enterocolitis,2
+357,Milan,Neoplasm,2
+358,Milan,Neoplasm Metastasis,7
+359,Milan,Neoplasms,19
+360,Villejuif,Neoplasms by Histologic Type,3
+361,Amsterdam,Neoplasms by Site,5
+362,Seoul,"Neoplasms, Germ Cell and Embryonal",2
+363,Groningen,"Neoplasms, Nerve Tissue",2
+364,Genoa,Nephrotic Syndrome,5
+365,Parma,Nerve Block,2
+366,Bordeaux,Neuroectodermal Tumors,2
+367,Brescia,Neuroendocrine Tumours,2
+368,Milan,Neuromuscular Blockade,3
+369,Kansas City,Neuromyelitis Optica Spectrum Disorder,4
+370,Messina,Neurotrophic Keratitis,2
+371,Milan,Non Hodgkin Lymphoma,6
+372,Milan,Non Small Cell Lung Cancer (NSCLC),3
+373,Madrid,Non-Hodgkin Lymphoma,5
+374,Barcelona,Non-Small Cell Lung Cancer,24
+375,Barcelona,Non-Small Cell Lung Cancer (NSCLC),4
+376,Madrid,Non-Small Cell Lung Cancer Metastatic,2
+377,Seville,Non-Small-Cell Lung,2
+378,Birmingham,Non-Small-Cell Lung Carcinoma,2
+379,San Francisco,Non-Squamous Non-Small Cell Lung Cancer,4
+380,Rome,Non-segmental Vitiligo,2
+381,Madrid,Non-small Cell Lung Cancer,26
+382,Wuhan,Non-small Cell Lung Cancer (NSCLC),2
+383,Rome,Non-small-cell Lung Cancer Patients,2
+384,Barcelona,Nonalcoholic Steatohepatitis,7
+385,Milan,Nurse Physician Relations,2
+386,Rome,"Obesity, Morbid",4
+387,Milan,Oesophageal Cancer,2
+388,Bologna,Ollier Disease,2
+389,Madrid,Open-Angle Glaucoma,2
+390,Bologna,Osteoarthritis,13
+391,Bologna,"Osteoarthritis, Hip",2
+392,Bologna,"Osteoarthritis, Knee",15
+393,Bologna,Osteogenesis Imperfecta,5
+394,Milan,Osteoporosis,3
+395,Udine,"Osteoporosis, Postmenopausal",2
+396,Bologna,Osteosarcoma,14
+397,Milan,Ovarian Cancer,46
+398,Rome,Ovarian Carcinoma,3
+399,Naples,Ovarian cancer recurrent,2
+400,Sternberk,Overactive Bladder,2
+401,Bologna,Overweight,5
+402,Verona,PDAC - Pancreatic Ductal Adenocarcinoma,2
+403,Trieste,Pain Relief,3
+404,Bologna,Palliative Care,10
+405,Verona,Pancreas Cancer,3
+406,Milan,Pancreatic Neoplasms,4
+407,Dublin,Pancreaticoduodenectomy,2
+408,Milan,Parkinson Disease,19
+409,Pisa,Paroxysmal Atrial Fibrillation,2
+410,Granada,Partial Onset Seizures,2
+411,Bologna,Patellofemoral Dislocation,2
+412,Bologna,Patent Ductus Arteriosus,3
+413,Bologna,Patent Ductus Arteriosus After Premature Birth,2
+414,Pisa,Periodontitis,3
+415,Rome,Peritoneal Cancer,8
+416,Tucson,Peritoneal Neoplasms,3
+417,Linz,Persistent Atrial Fibrillation,2
+418,Ascoli Piceno,Philadelphia-Positive ALL,2
+419,London,Pigmented Villonodular Synovitis,4
+420,Rome,Pneumococcal Infections,2
+421,Milan,"Pneumonia, Bacterial",2
+422,Milan,"Pneumonia, Viral",5
+423,Milan,Pneumothorax,3
+424,Florence,Polycythemia Vera,9
+425,Houston,Post-essential Thrombocythemia Myelofibrosis,5
+426,Houston,Post-polycythemia Vera Myelofibrosis,5
+427,Rome,Prader-Willi Syndrome,2
+428,Florence,Precancerous Conditions,2
+429,Milan,Prematurity,2
+430,Naples,Prevention of Venous Thromboembolism,2
+431,Jerusalem,Primary Biliary Cholangitis,4
+432,Houston,Primary Biliary Cirrhosis,4
+433,Messina,Primary Mitochondrial Disease,2
+434,Bonn,Primary Mitochondrial Myopathy,3
+435,Milan,Primary Peritoneal Carcinoma,4
+436,Padova,Primary Sclerosing Cholangitis,5
+437,Aurora,Primary Sclerosing Cholangitis (PSC),2
+438,Trieste,Procedural Pain,3
+439,Colorado Springs,Prostate Adenocarcinoma,3
+440,Madrid,Prostate Cancer Metastatic,3
+441,Pisa,Prostate cancer metastatic,2
+442,Sydney,Prostatic Neoplasms,7
+443,Milan,Pseudomyxoma Peritonei,2
+444,Rome,Psychological Distress,2
+445,London,Pulmonary Arterial Hypertension,24
+446,Bologna,Pulmonary Embolism,9
+447,Barcelona,Pulmonary Hypertension,7
+448,Bologna,RAEB,2
+449,Bologna,Radiotherapy,8
+450,Milan,Rare Diseases,3
+451,Bologna,Rectal Neoplasms,3
+452,Portland,Recurrent Breast Cancer,2
+453,Coral Gables,Recurrent Breast Carcinoma,2
+454,Los Angeles,Recurrent Glioma,2
+455,Grand Rapids,Recurrent Lung Non-Small Cell Carcinoma,3
+456,Springfield,Recurrent Lung Non-Squamous Non-Small Cell Carcinoma,3
+457,La Jolla,Refractory Diffuse Large B-Cell Lymphoma,2
+458,Budapest,Refractory Follicular Lymphoma,2
+459,Rome,Refractory Lymphoma,2
+460,Bologna,Relapsed Ewing Sarcoma,2
+461,Turin,Relapsed Multiple Myeloma,2
+462,Valencia,Relapsed Ovarian Cancer,2
+463,Thessaloniki,Relapsed or Refractory Multiple Myeloma,4
+464,Salamanca,Relapsed/Refractory Follicular Lymphoma,4
+465,Hamburg,Relapsed/Refractory Multiple Myeloma,3
+466,Catania,Remission,2
+467,Madrid,Renal Cell Carcinoma,15
+468,Ancona,Replacement Therapy in Preterm Infants,2
+469,Milan,"Respiration, Artificial",2
+470,Milan,Respiratory Acidosis,2
+471,Milan,Respiratory Alkalosis,3
+472,Milan,Respiratory Distress Syndrome in Premature Infant,3
+473,Florence,"Respiratory Distress Syndrome, Newborn",2
+474,Heidelberg,Respiratory Tract Disease,5
+475,Florence,"Respiratory, thoracic and mediastinal disorders",2
+476,Florence,Rheumatoid Arthritis,11
+477,Milan,SARS-CoV-2,2
+478,Monza,SARS-CoV2 Infection,2
+479,Ancona,Sarcoidosis,2
+480,Bologna,"Sarcoma, Ewing",2
+481,Milan,"Sarcoma, Soft Tissue",4
+482,Milan,Sarcopenic Obesity,2
+483,Houston,"Scleroderma, Systemic",5
+484,Bologna,Scoliosis Idiopathic,2
+485,Milan,Septic Shock,9
+486,London,Severe Aortic Stenosis,3
+487,Palermo,Sjogren's Syndrome,2
+488,Milan,Skin Diseases,3
+489,Liverpool,Skin Fibrosis,2
+490,Naples,Skin Neoplasm,2
+491,Milan,Small Cell Lung Cancer,12
+492,Milan,Small Intestine Cancer,2
+493,Milan,Small Lymphocytic Lymphoma,11
+494,Madrid,Small-cell Lung Cancer,3
+495,Tours,Smoldering Multiple Myeloma,2
+496,Milan,Solid Tumors,20
+497,Aurora,Solid tumors,2
+498,Bologna,Spinal Fusion,5
+499,Milan,Spinal Muscular Atrophy,7
+500,Milan,Spinal Muscular Atrophy Type 3,2
+501,Milan,Squamous Cell Carcinoma of Head and Neck,5
+502,Edmonton,Stage I Prostate Adenocarcinoma,2
+503,Seattle,Stage IB Breast Cancer,2
+504,Hazleton,Stage IB Lung Non-Small Cell Carcinoma AJCC v7,3
+505,Albuquerque,Stage II Breast Cancer,4
+506,Sylvania,Stage IIA Breast Cancer,2
+507,Clovis,Stage IIA Lung Non-Small Cell Carcinoma AJCC v7,2
+508,Parma,Stage IIB Breast Cancer,2
+509,Harvey,Stage IIB Lung Non-Small Cell Carcinoma AJCC v7,2
+510,Teaneck,Stage IIIA Breast Cancer,4
+511,Antioch,Stage IIIC Breast Cancer,3
+512,Langhorne,Stage IV Breast Cancer,2
+513,Flint,Stage IV Lung Cancer AJCC v8,6
+514,Fort Wayne,Stage IVB Lung Cancer AJCC v8,4
+515,Milan,Status Epilepticus,2
+516,Milan,Stem Cell Transplantation,2
+517,Turin,Stent Restenosis,2
+518,Barcelona,Still Disease,2
+519,Milan,Stomach Neoplasms,4
+520,Pittsburgh,"Stroke, Acute",2
+521,Turin,Surgical Complication,2
+522,Bern,Symptomatic Aortic Stenosis,2
+523,Sydney,Symptomatic Neurogenic Orthostatic Hypotension,3
+524,Sendai,Systemic Lupus Erythematosus (SLE),3
+525,London,Systemic Sclerosis,6
+526,Buenos Aires,TTR,2
+527,Porto Alegre,Tay-Sachs Disease,2
+528,Lyon,"Tenosynovial Giant Cell Tumor, Diffuse",2
+529,Milan,Testicular Germ Cell Tumor,2
+530,Milan,Thalassemia Major,2
+531,Milan,Thrombocytopenia,5
+532,Milan,Thymoma,2
+533,Pisa,Thyroid Eye Disease,4
+534,Créteil,Transthyretin,2
+535,Skellefteå,Transthyretin (TTR) Amyloid Cardiomyopathy,2
+536,Indianapolis,Transthyretin-Mediated Amyloid Cardiomyopathy (ATTR CM),2
+537,Warsaw,Traumatic Arthritis,2
+538,Beachwood,Triple-Negative Breast Carcinoma,3
+539,Monza,Triple-negative Breast Cancer,2
+540,Milan,Tuberculosis,3
+541,Milan,Tumors,4
+542,Verona,Type 1 Diabetes,2
+543,Milan,Type 1 Diabetes Mellitus,3
+544,Padova,Type 2 Diabetes,6
+545,Palermo,Type 2 Diabetes Mellitus,5
+546,Kansas City,Unresectable Urothelial Carcinoma,2
+547,Milan,Urogenital Neoplasms,2
+548,Turin,Urolithiasis,2
+549,Milan,Urothelial Carcinoma,14
+550,Milan,Uveitis,2
+551,Leuven,Vaginal Cancer,2
+552,Bologna,Vascular Calcification,2
+553,Warsaw,Vascular Disease,2
+554,Genoa,Vaso-occlusive Pain Episode in Sickle Cell Disease,3
+555,Trieste,Venipuncture,2
+556,Pisa,Venous Leg Ulcer,2
+557,Rome,Venous Thromboembolism,8
+558,Milan,Ventilator Associated Pneumonia,3
+559,Bologna,Ventricular Arrythmia,3
+560,Sheffield,Ventricular Tachycardia,2
+561,Milan,Vomiting,3
+562,Barcelona,Waldenström's Macroglobulinemia,2
+563,Los Angeles,Warm Autoimmune Hemolytic Anemia (wAIHA),2
+564,Suita,XLP,2
+565,Bologna,ACL Injury,4
+566,Berlin,ADHD,2
+567,Bologna,AML,6
+568,Milan,ARDS,7
+569,Monza,"ARDS, Human",2
+570,Rome,Abdominal Aortic Aneurysm,5
+571,Milan,Achondroplasia,2
+572,Milan,Acid-Base Imbalance,3
+573,Milan,Acromegaly,8
+574,Barcelona,Acute Hypoxemic Respiratory Failure,2
+575,Rome,Acute Lymphoblastic Leukemia,11
+576,Barcelona,Acute Lymphoblastic Leukemia (ALL),2
+577,Bergamo,Acute Lymphoid Leukemia,2
+578,Rome,Acute Myeloid Leukemia (AML),6
+579,Rome,Acute Myocardial Infarction,5
+580,Southport,Acute Non-cardioembolic Ischemic Stroke,2
+581,Rome,Acute Promyelocytic Leukemia,6
+582,Milan,Acute Respiratory Distress Syndrome,8
+583,Milan,Acute Respiratory Distress Syndrome (ARDS),3
+584,Milan,Acute Respiratory Failure,12
+585,Montreal,Acute-graft-versus-host Disease,2
+586,Bologna,Adolescent Idiopathic Scoliosis,3
+587,Brescia,Adrenocortical Carcinoma,3
+588,Catania,Adult,2
+589,Lecce,Adult Patients,2
+590,Madrid,Advanced Cancer,8
+591,Kaohsiung City,Advanced Cholangiocarcinoma,3
+592,Barcelona,Advanced Chronic Liver Disease,2
+593,Tainan City,Advanced Hepatocellular Carcinoma,2
+594,Villejuif,Advanced Malignant Neoplasm,2
+595,Barcelona,Advanced Melanoma,3
+596,Siena,Advanced Non-Small Cell Lung Cancer,4
+597,Rome,Advanced Non-small Cell Lung Cancer,2
+598,Rome,Advanced Parkinson's Disease,2
+599,Madrid,Advanced Solid Tumor,6
+600,Brandon,Agitation in Patients With Dementia of the Alzheimer's Type,2
+601,Dallas,Alzheimers Disease,4
+602,Bologna,Amyloid Cardiomyopathy,2
+603,Pavia,Amyloidosis,13
+604,Padova,Analgesia,2
+605,South San Francisco,Anaplastic Thyroid Cancer,2
+606,Rome,Anastomotic Leak,4
+607,New York,Anemia,7
+608,Cambridge,"Anemia, Hemolytic",3
+609,Bologna,"Anesthesia, Spinal",3
+610,Halifax,Aneurysmal Subarachnoid Hemorrhage,3
+611,Rochester,Angioedema,2
+612,Rome,Anterior Cruciate Ligament Reconstruction,2
+613,Rome,Antibiotic Resistant Infection,2
+614,Trieste,Anticoagulant-induced Bleeding,2
+615,Florence,Antiplatelet Therapy,2
+616,Bologna,Aortic Aneurysm,2
+617,Bologna,Aortic Dissection,3
+618,Siena,Apical Periodontitis,2
+619,Bologna,Apnea of Prematurity,2
+620,Rome,Arterial Occlusive Diseases,2
+621,Bologna,"Arthroplasty, Replacement, Knee",3
+622,Palermo,Ascites,2
+623,Barcelona,Asthma,10
+624,Bologna,Atherosclerosis,5
+625,Barcelona,Atrophy,2
+626,Paris,Atypical Hemolytic Uremic Syndrome,3
+627,Milan,Atypical Parkinsonism,2
+628,Barcelona,Autism Spectrum Disorder (ASD),3
+629,Monza,Autoimmune Hepatitis,2
+630,Warsaw,Avascular Necrosis,4
+631,Rome,BPH,2
+632,Siena,BRAF V600 Mutation,2
+633,Naples,BRCA Mutation,2
+634,Varese,Bacteremia,2
+635,Milan,Bacterial Infections,3
+636,Genova,Bariatric Surgery,2
+637,Florence,Behcet Syndrome,3
+638,London,Benign Prostatic Hyperplasia,2
+639,Bangkok,Beta-Thalassemia,4
+640,Milan,Biliary Tract Cancer,5
+641,Verona,"Biopsy, Fine-needle",2
+642,Leipzig,Bleeding Disorder,2
+643,Bologna,Bone Neoplasm,4
+644,Bologna,Bone Tumor,4
+645,Bologna,Bradycardia Neonatal,2
+646,Milan,Brain Diseases,2
+647,Milan,Brain Neoplasms,2
+648,Milan,Breast Cancer,84
+649,New York,Breast Cancer Stage III,2
+650,Rome,Breast Neoplasm Female,2
+651,Cagliari,Breast cancer female,2
+652,Milan,Bronchiectasis Adult,2
+653,Aviano,Burkitt's Lymphoma,2
+654,Milan,Burning Mouth Syndrome,2
+655,Milan,COVID-19,25
+656,Bologna,COVID-19 Acute Respiratory Distress Syndrome,2
+657,Aurora,COVID19,2
+658,Milan,Cancer Pain,4
+659,London,Cancer of the Prostate,2
+660,Angers,Carcinoid Syndrome,2
+661,Barcelona,Carcinoma,5
+662,Milan,"Carcinoma, Non-Small-Cell Lung",34
+663,New York,"Carcinoma, Squamous Cell",3
+664,Monza,Cardiac Arrest,6
+665,Pisa,Cardiac Arrhythmia,3
+666,Rome,Cardiac Disease,2
+667,Milan,Cardiopulmonary Exercise Test,2
+668,Saint-Mandé,Castration-Resistant Prostatic Cancer,3
+669,Milan,Cervical Cancer,12
+670,Naples,Chemotherapy-induced Nausea and Vomiting,2
+671,London,Child,2
+672,Brussels,Children,4
+673,Rome,"Children, Only",2
+674,Milan,Cholangiocarcinoma,9
+675,London,Chordoma,2
+676,Rome,Chronic Heart Failure With Reduced Ejection Fraction,2
+677,Paris,Chronic Hepatitis C,5
+678,South Bend,Chronic Lung Disease of Prematurity,2
+679,Turin,Chronic Lymphoid Leukemia,2
+680,Milan,Chronic Myeloid Leukaemia,2
+681,Dallas,Chronic Myelomonocytic Leukemia,4
+682,San Francisco,Chronic Thromboembolic Pulmonary Hypertension,3
+683,Rome,Cicatrix,2
+684,Milan,Clear cell renal cell carcinoma,3
+685,Seville,Clear-cell Metastatic Renal Cell Carcinoma,2
+686,Boston,Cognitive Impairment,2
+687,Milan,Cold Agglutinin Disease,3
+688,London,"Colitis, Ulcerative",9
+689,Milan,Colonic Diseases,2
+690,Oklahoma City,Colorectal Adenocarcinoma,2
+691,Milan,Colorectal Cancer (CRC),5
+692,Milan,Colorectal Cancer Liver Metastases,2
+693,Rome,Colorectal Carcinoma,2
+694,Rome,Colorectal Neoplasms,7
+695,Monza,Coma,2
+696,Padova,Congenital Heart Disease,3
+697,Budapest,Connective Tissue Diseases,3
+698,Stockholm,Constipation,2
+699,Santa Monica,Conventional Chondrosarcoma,2
+700,Modena,Corona virus infection,3
+701,Rome,Coronary Artery Diseases,2
+702,Milan,Coronary Artery Restenosis,4
+703,Milan,Coronary Artery Stenosis,6
+704,Salzburg,Coronary Restenosis,2
+705,Pavia,Coronavirus infection,2
+706,Milan,Covid19,21
+707,Rome,Crohn Disease,12
+708,Edmonton,Crohn's Disease (CD),2
+709,Bologna,Cuff Rotator Syndrome,2
+710,Berlin,Cutaneous Melanoma,3
+711,Milan,Cutaneous Squamous Cell Carcinoma,2
+712,Torino,Cutaneous T-Cell Lymphoma/Mycosis Fungoides,2
+713,Rome,Cystic fibrosis,2
+714,Tampa,Cytomegalovirus Infections,3
+715,Naples,DLBCL,3
+716,Milan,Dedifferentiated Liposarcoma,3
+717,Hamilton,Deep Vein Thrombosis,2
+718,San Diego,"Dermatitis, Atopic",3
+719,Portland,Desmoid Tumor,2
+720,Paris,Desmoplastic Small Round Cell Tumor,2
+721,Rome,"Diabetes Mellitus, Type 1",2
+722,Florence,Diabetic Foot Ulcer,2
+723,Rome,Diabetic Macular Edema,5
+724,Perugia,Diaphragm Injury,2
+725,Naples,Dietary Exposure,2
+726,Villejuif,Differentiated Thyroid Cancer (DTC),2
+727,Milan,Diffuse Large B Cell Lymphoma,6
+728,Rome,Diffuse Large B-cell Lymphoma,9
+729,Rome,Diffuse Large B-cell Lymphoma Refractory,2
+730,Pisa,Digestive System Diseases,2
+731,London,Dilated Cardiomyopathy,2
+732,Padova,Diverticulitis,3
+733,Toronto,Dravet Syndrome (DS),2
+734,Milan,Drug Toxicity,2
+735,Florence,"Ductus Arteriosus, Patent",2
+736,Milan,Dyspnea,2
+737,Rome,Dystonia,2
+738,Barcelona,Early Breast Cancer,5
+739,Tampa,Eczema,2
+740,Rome,Elderly,2
+741,Florence,Elderly Patients,3
+742,Ferrara,Emergencies,3
+743,Valencia,End-stage Renal Disease,2
+744,Aurora,Endocrine System Diseases,3
+745,Milan,Endometrial Cancer,8
+746,Barcelona,Endometrial Neoplasms,6
+747,Verona,Endoscopic Ultrasound,2
+748,Nashville,Enteric Hyperoxaluria,2
+749,San Antonio,"Epilepsy, Partial Seizures",2
+750,Rome,Epithelial Ovarian Cancer,6
+751,Milan,Epithelioid Sarcoma,2
+752,Milan,Esophageal Squamous Cell Carcinoma (ESCC),3
+753,Padova,Essential Hypertension,2
+754,London,Essential Thrombocythemia,2
+755,Washington D.C.,Essential Thrombocythemia (ET),2
+756,Wilmington,Estrogen Receptor Negative,2
+757,Bologna,"Exostoses, Multiple Hereditary",2
+758,Vancouver,Extensive Stage Lung Small Cell Carcinoma,2
+759,Milan,Extracorporeal Membrane Oxygenation,3
+760,Milan,Extracorporeal Membrane Oxygenation Complication,2
+761,Milan,Extragonadal Germ Cell Tumor,2
+762,Siena,Eye disorders,3
+763,Irvine,FAP,2
+764,Manchester,FGFR2 Gene Mutation,2
+765,Lyon,FGFR2 Gene Translocation,2
+766,Naples,Fabry Disease,7
+767,Milan,Fallopian Tube Cancer,14
+768,Boston,Familial Amyloid Polyneuropathy,3
+769,Oslo,Familial Chylomicronemia Syndrome,2
+770,Catania,Fatty Liver,2
+771,Bologna,Femoroacetabular Impingement,2
+772,Genoa,Fibrodysplasia Ossificans Progressiva,5
+773,Bologna,Flat Feet,4
+774,Milan,Follicular Lymphoma,21
+775,Milan,Gastric Adenocarcinoma,7
+776,Reggio Emilia,Gastric Neoplasm,2
+777,Nantes,Gastro-enteropancreatic Neuroendocrine Tumor,2
+778,Milan,Gastroesophageal Junction Adenocarcinoma,7
+779,Milan,Gastrointestinal Cancer,3
+780,Milan,Gastrointestinal disorders,2
+781,Valencia,"Genetic Diseases, Inborn",4
+782,Milan,Germ Cell Tumor,2
+783,Milan,Germ Cell Tumors,2
+784,Bologna,Giant Cell Tumor of Bone,3
+785,Milan,Glaucoma,4
+786,Milan,Glioblastoma,16
+787,Milan,Glioblastoma Multiforme,8
+788,Verona,"Glomerulonephritis, Membranous",2
+789,Irvine,Glycogen Storage Disease Type 2,2
+790,Milan,Graft Failure,3
+791,Turin,Graft Vs Host Disease,2
+792,Genoa,Graft-versus-Host Disease,2
+793,Pisa,Graves Ophthalmopathy,2
+794,Milan,Graves ophthalmopathy,2
+795,London,HER2 Positive Breast Cancer,3
+796,Milan,HER2-negative Breast Cancer,2
+797,Milan,HIV,6
+798,Milan,HIV Infections,21
+799,Milan,HIV-1 Infection,12
+800,Milan,HIV-1-infection,4
+801,Turin,Haematologic Disease,2
+802,Florence,Haemophilia A,2
+803,Milan,Head and Neck Squamous Cell Carcinoma,6
+804,Padova,Hearing Loss,2
+805,Cuneo,Heart Diseases,2
+806,Padova,Hematocrit Anemia,2
+807,Madrid,Hematologic Malignancies,4
+808,Bologna,Hematological Malignancies,5
+809,Trieste,Hematopoietic Stem Cell Transplantation,3
+810,Bologna,Hemodialysis,3
+811,Brisbane,"Hemoglobinuria, Paroxysmal",2
+812,Milan,Hemophilia A With Inhibitor,3
+813,Lyon,Hemophilia B,8
+814,Vancouver,Hemorrhage,2
+815,Rome,Hemorrhagic Stroke,2
+816,Pisa,"Hepatitis B, Chronic",9
+817,Milan,Hepatitis C,8
+818,Bologna,Hepatitis C Virus (HCV),3
+819,Seattle,Hepatitis C Virus Infection,4
+820,Genoa,"Hepatitis C, Chronic",3
+821,Rio de Janeiro,Hereditary Transthyretin-Mediated Amyloid Polyneuropathy,2
+822,Indianapolis,Hidradenitis Suppurativa,3
+823,Milan,High Grade Glioma,2
+824,Bologna,Hip Osteoarthritis,9
+825,Cincinnati,Hodgkin Disease,2
+826,Rome,Hospitalization,4
+827,Rome,Human Immunodeficiency Virus,4
+828,Rome,"Human immunodeficiency virus infection, unspecified",3
+829,Plymouth,Huntington's Disease,3
+830,Milan,Hyperphosphatemia,2
+831,Bratislava,Hypersensitivity,2
+832,Miami Lakes,"Hypertension, Portal",2
+833,Milan,Hypothermia,2
+834,Genoa,IVF,2
+835,Siena,Idiopathic Pulmonary Fibrosis,19
+836,Modena,Immune System Diseases,3
+837,Florence,Immune Thrombocytopenia,2
+838,Poitiers,Indolent Non-Hodgkin's Lymphomas,2
+839,Milan,Infertility,5
+840,Bologna,Inflammation,3
+841,Milan,Influenza,4
+842,Detroit,Influenza A,2
+843,Milan,Insomnia,2
+844,Paris,Interstitial Lung Disease,5
+845,Milan,Intervertebral Disc Degeneration,2
+846,Milan,Intracranial Hemorrhages,2
+847,Barcelona,Intraoperative Complications,2
+848,Turin,Invasive Aspergillosis,2
+849,Bologna,Invasive Candidiases,2
+850,Waterford,Invasive Ductal Breast Carcinoma,2
+851,Milan,Kaposi Sarcoma,3
+852,Philadelphia,Kidney Neoplasms,2
+853,Milan,Kidney Transplant,3
+854,Monza,Laparoscopic Cholecystectomy,3
+855,Bologna,Laxity of Ligament,2
+856,Desio,Left Ventricular Systolic Dysfunction,2
+857,Rome,Leukemia,24
+858,Paris,"Leukemia, B-cell",2
+859,Milan,"Leukemia, Lymphocytic, Chronic, B-Cell",2
+860,Pennington,Limited Stage Lung Small Cell Carcinoma,2
+861,Rozzano,Liposarcoma,4
+862,Bethesda,Liquid Biopsy,3
+863,Padova,Liver Cirrhosis,7
+864,Bologna,Liver Diseases,4
+865,Winnipeg,Liver Fibrosis Due to NASH,2
+866,Milan,Liver Transplant,3
+867,Bologna,Liver cell carcinoma non-resectable,2
+868,Bologna,Localized Osteosarcoma,2
+869,Barcelona,Locally Advanced Head and Neck Squamous Cell Carcinoma,2
+870,Athens,Locally Recurrent Breast Cancer,2
+871,Florence,Lower Urinary Tract Symptoms,3
+872,Chicago,Lung Adenocarcinoma,2
+873,Milan,Lung Cancer,31
+874,Milan,Lung Diseases,7
+875,London,"Lung Diseases, Interstitial",7
+876,Copenhagen,Lung Neoplasm,2
+877,Ancona,Lung Neoplasms,3
+878,Battle Creek,Lung Non-Squamous Non-Small Cell Carcinoma,2
+879,Bologna,Lymphatic Diseases,2
+880,Turin,"Lymphoma, B-Cell",2
+881,Milan,"Lymphoma, Follicular",3
+882,Madrid,"Lymphoma, Large B-Cell, Diffuse",4
+883,Milan,"Lymphoma, Mantle-Cell",5
+884,Paris,"Lymphoma, Non-Hodgkin",8
+885,Kansas City,MDS,3
+886,Bologna,MZL,2
+887,Austin,Macular Degeneration,4
+888,Bologna,"Malalignment, Bone",2
+889,Milan,Malignant Pleural Mesothelioma,3
+890,Milan,Malignant breast neoplasm,2
+891,Milan,Mantle Cell Lymphoma,10
+892,Milan,Marginal Zone Lymphoma,8
+893,Rome,Mastectomy,2
+894,Ancona,Mediastinal Lymphadenopathy,2
+895,Florence,Medulloblastoma,3
+896,Bologna,Membranoproliferative Glomerulonephritis,2
+897,Barcelona,Merkel Cell Carcinoma,4
+898,Rome,Metabolism and nutrition disorders,3
+899,Naples,Metastatic Breast Cancer,21
+900,Milan,Metastatic Cancer,9
+901,Rome,Metastatic Colon Cancer,2
+902,Pisa,Metastatic Colorectal Adenocarcinoma,2
+903,Decatur,Metastatic Cutaneous Melanoma,2
+904,Lacey,Metastatic Lung Non-Squamous Non-Small Cell Carcinoma,2
+905,Barcelona,Metastatic Melanoma,8
+906,O'Fallon,Metastatic Mucosal Melanoma,2
+907,Los Angeles,Metastatic Pancreatic Adenocarcinoma,3
+908,Verona,Metastatic Pancreatic Cancer,5
+909,Florence,Metastatic Prostate Cancer,2
+910,Parma,Metastatic gastric cancer,2
+911,Milan,Metformin,2
+912,Parma,Microscopic Polyangiitis,2
+913,Rome,Migraine Disorders,3
+914,Barcelona,"Monitoring, Immunologic",2
+915,Padova,Morbid Obesity,2
+916,Bologna,Multiple Myeloma,46
+917,Bologna,Multiple Osteochondroma,3
+918,Rome,Multiple Sclerosis,18
+919,Rome,Multiple Sclerosis (MS),2
+920,Mexico City,"Multiple Sclerosis, Primary Progressive",3
+921,Rome,Multiple sclerosis,2
+922,Milan,Multiple sclerosis (MS),2
+923,Kansas City,Muscular Diseases,2
+924,Milan,"Muscular Dystrophy, Duchenne",4
+925,Aurora,Musculoskeletal Diseases,3
+926,Bologna,Musculoskeletal and connective tissue disorders,2
+927,Dallas,Myasthenia Gravis,3
+928,Bologna,Mycoses,4
+929,New York,Myelodysplastic Syndrome,9
+930,London,Myelodysplastic Syndrome (MDS),2
+931,Rome,Myelodysplastic Syndromes,28
+932,Leuven,Myelodysplastic/Myeloproliferative Neoplasms,2
+933,Barcelona,Myelofibrosis (MF),4
+934,Turin,Myocarditis Acute,2
+935,Milan,NSCLC,7
+936,London,NTRK Family Gene Mutation,2
+937,Bologna,Narcolepsy,2
+938,Berlin,Narcolepsy Type 1,2
+939,Sydney,Narcolepsy Type 2,2
+940,Milan,Nasal neoplasm,2
+941,Padova,"Neoplasms benign, malignant and unspecified incl cysts and polyps",3
+942,Genoa,Nephrotic Syndrome Steroid-Dependent,2
+943,Genoa,Nephrotic syndrome,2
+944,Sydney,Nervous System Diseases,3
+945,Milan,Nervous system disorders,2
+946,Genoa,Neuroblastoma,15
+947,Pisa,Neuroendocrine Carcinoma,2
+948,Milan,Neuroendocrine Tumors,11
+949,St Louis,Neuromuscular Diseases,3
+950,Rome,Neuromyelitis Optica,3
+951,Ferrara,Neuropathic Pain,2
+952,Phoenix,Newly Diagnosed,2
+953,Milan,Non Small Cell Lung Cancer,15
+954,Sciacca,Non-Celiac Wheat Sensitivity,2
+955,Milan,Non-Hodgkin's Lymphoma,8
+956,Bologna,Non-Hodgkins Lymphoma,3
+957,Palermo,Non-celiac Gluten Sensitivity,5
+958,Palermo,Non-celiac Wheat Sensitivity,10
+959,Milan,Non-small Cell Lung Cancer Metastatic,5
+960,Viterbo,Non-small Cell Lung Cancer Stage IIIB,4
+961,Genova,Non-small Cell Lung Cancer Stage IV,2
+962,Milan,Nonalcoholic Fatty Liver Disease,3
+963,Rome,Obese,2
+964,Novara,"Obesity, Childhood",4
+965,Genoa,Obliterative Bronchiolitis,2
+966,Leuven,Ocular Hypertension,4
+967,Florence,Older Patients,2
+968,Trieste,Oncology,3
+969,Parma,Orthopedic Surgery,2
+970,Bologna,Osteosarcoma Recurrent,2
+971,Bournemouth,Out-of-hospital Cardiac Arrest,3
+972,Rome,Ovarian Neoplasms,4
+973,Houston,Overweight or Obesity,2
+974,Rome,PAD,2
+975,Milwaukee,PAH,4
+976,Rome,"Pain, Postoperative",3
+977,New York,Pancreatic Adenocarcinoma,3
+978,Verona,Pancreatic Diseases,3
+979,Madrid,Pancreatic Ductal Adenocarcinoma,5
+980,Birmingham,Pancreatic Ductal Carcinoma,2
+981,Verona,Pancreatic Fistula,4
+982,Reggio Emilia,Pancreatic Neoplasm,2
+983,Boston,Papillary Thyroid Cancer,3
+984,Odense,Parkinson's Disease (PD),3
+985,Rome,Paroxysmal Nocturnal Hemoglobinuria,3
+986,Torino,Partial Epilepsy,3
+987,Goyang-si,Partial Response,2
+988,Bologna,Patellar Tendinopathy,2
+989,Spartanburg,Pathologic Stage II HPV-Mediated (p16-Positive) Oropharyngeal Carcinoma AJCC v8,2
+990,Madrid,Peanut Allergy,3
+991,Rome,Pediatric,2
+992,Milan,Pediatric Cancer,2
+993,Pisa,Periodontal Diseases,6
+994,Leipzig,Peripheral Arterial Disease,4
+995,Barcelona,Peripheral Artery Disease,2
+996,Bologna,Peripheral T-cell Lymphoma,5
+997,Rome,Peritoneal Carcinoma,2
+998,Milan,Peritoneal Metastases From Colorectal Cancer,2
+999,Guadalajara,Phenylketonuria,2
+1000,Rome,Philadelphia Positive,2
+1001,Rome,Plaque Psoriasis,3
+1002,Milan,Pneumonia,6
+1003,Milan,Pompe Disease,2
+1004,Philadelphia,Pompe Disease (Late-onset),2
+1005,Harbin,Post Essential Thrombocythemia Myelofibrosis,2
+1006,Gloucester,Post Polycythemia Vera Myelofibrosis,2
+1007,Paris,Post-ET Myelofibrosis,2
+1008,Halle,Post-PV MF,2
+1009,Paris,Post-Polycythemia Vera Myelofibrosis,2
+1010,Verona,Post-polio Syndrome,2
+1011,Naples,Postprandial Lipemia,2
+1012,Paris,Precancerous Condition,2
+1013,London,Precursor Cell Lymphoblastic Leukemia-Lymphoma,2
+1014,Milan,Pregnancy,7
+1015,Milan,Premature Birth,3
+1016,Bologna,Pressure Ulcer,3
+1017,Dresden,Primary IgA Nephropathy,2
+1018,Palermo,Primary Mediastinal Large B-cell Lymphoma (PMBCL),3
+1019,Paris,Primary Myelofibrosis,13
+1020,Adelaide,Primary Myelofibrosis (PMF),3
+1021,Pisa,Primary Open Angle Glaucoma,2
+1022,Evansville,Progesterone Receptor Negative,2
+1023,Milan,Progressive Supranuclear Palsy,2
+1024,Verona,Progressive multiple sclerosis,2
+1025,Seville,Propionic Acidemia,2
+1026,Milan,Prostate Cancer,19
+1027,Florence,Prostatic Hyperplasia,2
+1028,New York,"Prostatic Neoplasms, Castration-Resistant",3
+1029,Bologna,Prosthesis Survival,2
+1030,Milan,Proteinuria,3
+1031,Rome,Psoriasis,8
+1032,Rome,Psoriatic Arthritis,8
+1033,Rome,Psoriatic arthritis,2
+1034,Pavia,"Pulmonary Disease, Chronic Obstructive",4
+1035,San Francisco,Pulmonary Fibrosis,2
+1036,London,Pulmonary Hypoplasia,2
+1037,Trieste,Pyelonephritis,3
+1038,Boston,Pyruvate Kinase Deficiency,7
+1039,Milan,Rectal Cancer,7
+1040,Paris,Recurrent Glioblastoma,2
+1041,Rotterdam,Recurrent Low-grade Gliomas,2
+1042,Modesto,Recurrent Non-Small Cell Lung Carcinoma,2
+1043,San Francisco,Recurrent Ovarian Carcinoma,2
+1044,Roseville,Recurrent Pancreatic Carcinoma,2
+1045,Baltimore,Refractory Anemia With Excess Blasts,2
+1046,Milano,Refractory Epilepsy,2
+1047,Rome,Relapse,2
+1048,Florence,Relapsed Follicular Lymphoma,2
+1049,Rome,Relapsing Multiple Sclerosis,6
+1050,Madrid,Renal Anemia,2
+1051,Madrid,Renal Cell Carcinoma (RCC),2
+1052,Bologna,Renal Failure,2
+1053,Ghent,Renal Insufficiency,4
+1054,Milan,Respiratory Disease,2
+1055,Milan,Respiratory Distress Syndrome,5
+1056,Milan,Respiratory Insufficiency,4
+1057,Ramat Gan,Respiratory Syncytial Virus Infection,2
+1058,Porto Alegre,Respiratory Syncytial Virus Infections,3
+1059,Milan,Respiratory Tract Neoplasms,3
+1060,Rome,Retinitis Pigmentosa,2
+1061,Florence,Retinopathy of Prematurity,4
+1062,Rome,Retinopathy of Prematurity (ROP),5
+1063,Florence,Retinopathy of prematurity,2
+1064,Milan,Retroperitoneal Sarcoma,4
+1065,Barcelona,Rhabdomyosarcoma,5
+1066,Milan,Rheumatic Diseases,2
+1067,Heraklion,Rheumatoid Arthritis (RA),3
+1068,Rome,Risk Reduction,2
+1069,Bologna,Rotator Cuff Tears,2
+1070,Meldola,"SCLC,Extensive Stage",2
+1071,Florence,ST-segment Elevation Myocardial Infarction,2
+1072,Padova,Safety Issues,3
+1073,Milan,Salivary Gland Cancer,3
+1074,Milan,Salivary Gland Cancers,2
+1075,Paris,Sandhoff Disease,2
+1076,Milan,Schizophrenia,10
+1077,Brescia,Schizophrenia and Related Disorders,2
+1078,Philadelphia,"Sclerosis, Systemic",2
+1079,Bologna,Scoliosis,2
+1080,Milan,Second Hand Tobacco Smoke,3
+1081,Milan,Secondary Hyperparathyroidism,2
+1082,Münster,Secondary Prevention,2
+1083,Bologna,Sedation,2
+1084,Padova,Sedation Complication,2
+1085,Bonn,Severe Hemophilia A,2
+1086,Milan,Severe Sepsis,4
+1087,Bologna,Short Bowel Syndrome,4
+1088,Padova,Sickle Cell Disease,10
+1089,Nantes,Sinus Node Dysfunction,2
+1090,Houston,"Skin Diseases, Eczematous",2
+1091,Katowice,"Skin Diseases, Genetic",2
+1092,Orbassano,Small Cell Lung Cancer (SCLC),2
+1093,Milan,Small Cell Lung Carcinoma,4
+1094,Maastricht,Small Fiber Neuropathy,2
+1095,Bologna,Soft Tissue Sarcoma,8
+1096,Boston,Solid Organ Transplant Complications,2
+1097,Milan,Solid Tumor,8
+1098,London,Solid Tumors Harboring NTRK Fusion,3
+1099,Bologna,Spine Disease,2
+1100,Pavia,Splenic Marginal Zone Lymphoma,2
+1101,Parma,Squamous Cell Carcinoma of the Head and Neck,4
+1102,Barcelona,Squamous Non-Small Cell Lung Cancer,3
+1103,Turin,Stable Angina,3
+1104,Lexington,Stage II Lung Non-Small Cell Cancer AJCC v7,2
+1105,Baltimore,Stage II Prostate Adenocarcinoma,2
+1106,Milwaukee,Stage III Breast Cancer AJCC v7,2
+1107,Ravenna,Stage III Colon Cancer,2
+1108,Menomonee Falls,Stage III Prostate Adenocarcinoma,3
+1109,Poughkeepsie,Stage IIIA Lung Non-Small Cell Cancer AJCC v7,3
+1110,Sainte Genevieve,Stage IIIB Breast Cancer,2
+1111,'Aiea,Stage IIIB Lung Cancer AJCC v8,3
+1112,East Syracuse,Stage IV Breast Cancer AJCC v6 and v7,2
+1113,Fruitland,Stage IVA Lung Cancer AJCC v8,4
+1114,Rome,Stem Cell Transplant Complications,6
+1115,Monza,Subarachnoid Hemorrhage,4
+1116,Bologna,"Subarachnoid Hemorrhage, Aneurysmal",2
+1117,Milan,Sudden Cardiac Death,2
+1118,Milan,Surgery--Complications,2
+1119,Verona,Surgical Site Infection,3
+1120,Turin,Symptoms and Signs,2
+1121,Milan,Synovial Sarcoma,5
+1122,Barcelona,Systemic Autoimmune Diseases,2
+1123,Florence,Systemic Inflammatory Response Syndrome,3
+1124,Bydgoszcz,Systemic Lupus Erythematosus,8
+1125,Milan,T-Cell Lymphoma,2
+1126,Berlin,Tachycardia,3
+1127,Leeds,"Tachycardia, Ventricular",2
+1128,Bologna,Tendinopathy,2
+1129,Boston,Tenosynovial Giant Cell Tumor,4
+1130,Amsterdam,Thoracic Aortic Aneurysm,2
+1131,Milan,Thoracic Neoplasms,3
+1132,Turin,Thoracic Surgery,3
+1133,Florence,"Thrombocythemia, Essential",2
+1134,Milan,Thrombosis,2
+1135,New York,Thrombotic Disease,2
+1136,Barakaldo,Thrombotic Thrombocytopenic Purpura (TTP),3
+1137,Milan,Thymic Carcinoma,3
+1138,Valencia,Thyroid Cancer,3
+1139,Madrid,Thyroid Diseases,2
+1140,Modena,Thyroid Neoplasms,2
+1141,Milan,Total Coronary Occlusion,2
+1142,Florence,Transthyretin Amyloidosis,3
+1143,Ancona,Trauma Injury,2
+1144,Leipzig,Tricuspid Valve Insufficiency,2
+1145,Barcelona,Triple Negative Breast Cancer,13
+1146,Milan,Triple Negative Breast Neoplasms,7
+1147,London,Triple-Negative Breast Cancer,3
+1148,Barcelona,Tuberous Sclerosis Complex,3
+1149,Pisa,Type 2 diabetes mellitus,2
+1150,Wilmington,UC (Urothelial Cancer),4
+1151,Rome,Ulcerative Colitis,36
+1152,Kiel,Ulcerative Colitis (UC),8
+1153,Siena,Unresectable Melanoma,4
+1154,Bordeaux,"Unspecified Adult Solid Tumor, Protocol Specific",3
+1155,Paris,Urinary Bladder Neoplasms,7
+1156,Pisa,Urinary Tract Cancer,2
+1157,Seattle,Urologic Neoplasms,2
+1158,Barcelona,Urothelial Cancer,8
+1159,Milan,Urothelial Carcinoma Bladder,2
+1160,Milan,Urothelial carcinoma,3
+1161,Milan,Uterine Cervical Neoplasms,5
+1162,Berlin,Uterine Fibroids,3
+1163,Glasgow,Uveal Melanoma,2
+1164,Milan,Valvular Heart Disease,3
+1165,Madrid,Vascular Diseases,5
+1166,Tripoli,Vaso-occlusive Crisis,3
+1167,Milan,Ventilation Therapy,2
+1168,Milan,Ventilator-Induced Lung Injury,2
+1169,Rome,Ventricular Fibrillation,2
+1170,Milan,Very Low Birth Weight Infant,2
+1171,Rome,Viral lower respiratory tract infections,2
+1172,Florence,Von Willebrand Disease,6
+1173,Pavia,Vulvovaginal Atrophy,3
+1174,Milan,Waldenstrom Macroglobulinemia,2
+1175,Olympia,Warm Antibody Autoimmune Hemolytic Anemia,2
+1176,Madrid,Warm Autoimmune Hemolytic Anemia,2
+1177,Philadelphia,Wet Macular Degeneration,2
+1178,Paris,X-Linked Retinitis Pigmentosa,2
+1179,Paris,X-linked Hypophosphatemia,2

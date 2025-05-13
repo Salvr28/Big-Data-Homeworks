@@ -1,0 +1,47 @@
+,City,Cancer Type,NumStudies per City/Cancer,rank
+0,Milan,Lung Cancer,255,1
+1,Rome,Leukemia / Leukaemia,218,1
+2,Milan,Non-Hodgkin's Lymphoma,216,1
+3,Milan,Breast Cancer,190,1
+4,Milan,Colon and Rectal Cancer,136,1
+5,Milan,Not Site-Specific Cancer,101,1
+6,Milan,Liver Cancer,89,1
+7,Milan,Ovarian Cancer,75,1
+8,Bologna,Myeloma,74,1
+9,Milan,Melanoma,72,1
+10,Milan,Sarcoma,62,1
+11,Verona,Pancreatic Cancer,58,1
+12,Milan,Kidney Cancer,54,1
+13,Milan,Bladder Cancer,51,1
+14,Milan,Brain Tumor,50,1
+15,Milan,Prostate Cancer,47,1
+16,Milan,Stomach Cancer,42,1
+17,Bologna,"Bone Cancer, Osteosarcoma / Malignant Fibrous Histiocytoma",34,1
+18,Rome,Blood Cancer,33,1
+19,Milan,Head and Neck Cancer,32,1
+20,Milan,Oral Cavity and Lip Cancer,29,1
+21,Milan,Salivary Gland Cancer,27,1
+22,Milan,Endometrial Cancer,24,1
+23,Milan,Esophageal / Oesophageal Cancer,24,1
+24,Milan,Cervical Cancer,22,1
+25,Barcelona,Laryngeal Cancer,19,1
+26,Genoa,Neuroblastoma,18,1
+27,Milan,Thyroid Cancer,14,1
+28,Milan,Skin Cancer,13,1
+29,Milan,Nervous System,11,1
+30,Naples,"Genital System, Female",9,1
+31,Milan,Gastrointestinal Tract,7,1
+32,Rome,Kaposi's Sarcoma,6,1
+33,Madrid,Gallbladder Cancer,5,1
+34,Milan,Nasal Cavity and Paranasal Sinus Cancer,5,1
+35,Madrid,Respiratory System,5,1
+36,Milan,Ear Cancer,4,1
+37,London,Small Intestine Cancer,4,1
+38,Milan,Testicular Cancer,4,1
+39,Madrid,Anal Cancer,3,1
+40,Pisa,"Genital System, Male",2,1
+41,Siena,Retinoblastoma,2,1
+42,Bologna,Eye Cancer,1,1
+43,Florence,Parathyroid Cancer,1,1
+44,Milan,Pituitary Tumor,1,1
+45,Bologna,Vulva Cancer,1,1

@@ -1,0 +1,481 @@
+,Main Funder,Collaborating Funder,Number of Collaborations
+0,AMRC - Association of Medical Research Charities,European Organisation for Research and Treatment of Cancer,120
+1,ICRP - International Cancer Research Partnership,National Cancer Institute,116
+2,US Federal Funders,National Cancer Institute,116
+3,NIH - National Institutes of Health,National Cancer Institute,116
+4,EC & ERC - European Union,European Commission,45
+5,cOAlition S,European Commission,45
+6,ICRP - International Cancer Research Partnership,Italian Association for Cancer Research,22
+7,US Federal Funders,Alliance for Clinical Trials in Oncology,15
+8,ICRP - International Cancer Research Partnership,Alliance for Clinical Trials in Oncology,15
+9,NIH - National Institutes of Health,Alliance for Clinical Trials in Oncology,15
+10,AMRC - Association of Medical Research Charities,Queen's University,7
+11,NIH - National Institutes of Health,National Institute of Neurological Disorders and Stroke,6
+12,US Federal Funders,University of Rochester,6
+13,ICRP - International Cancer Research Partnership,University of Pennsylvania,6
+14,US Federal Funders,National Institute of Neurological Disorders and Stroke,6
+15,ICRP - International Cancer Research Partnership,University of Rochester,6
+16,US Federal Funders,University of Pennsylvania,6
+17,NIH - National Institutes of Health,University of Pennsylvania,6
+18,NIH - National Institutes of Health,University of Rochester,6
+19,ICRP - International Cancer Research Partnership,National Institute of Neurological Disorders and Stroke,6
+20,US Federal Funders,United States Food and Drug Administration,6
+21,ICRP - International Cancer Research Partnership,National Heart Lung and Blood Institute,5
+22,US Federal Funders,Stanford University,5
+23,NIH - National Institutes of Health,National Heart Lung and Blood Institute,5
+24,ICRP - International Cancer Research Partnership,Canadian Institutes of Health Research,5
+25,NIH - National Institutes of Health,Stanford University,5
+26,NIHR - National Institute for Health Research,National Institute for Health and Care Research,5
+27,NIH - National Institutes of Health,Children's Hospital of Philadelphia,5
+28,ICRP - International Cancer Research Partnership,Istituto Neurologico Carlo Besta,5
+29,ICRP - International Cancer Research Partnership,Stanford University,5
+30,US Federal Funders,Children's Hospital of Philadelphia,5
+31,ICRP - International Cancer Research Partnership,Children's Hospital of Philadelphia,5
+32,AMRC - Association of Medical Research Charities,Children's Cancer and Leukaemia Group,5
+33,US Federal Funders,Istituto Neurologico Carlo Besta,5
+34,ICRP - International Cancer Research Partnership,Institut Gustave Roussy,5
+35,NIH - National Institutes of Health,Istituto Neurologico Carlo Besta,5
+36,US Federal Funders,National Heart Lung and Blood Institute,5
+37,ICRP - International Cancer Research Partnership,National Institutes of Health,4
+38,NIH - National Institutes of Health,Massachusetts General Hospital,4
+39,US Federal Funders,Johns Hopkins University,4
+40,HRA - Health Research Alliance,Istituto Neurologico Carlo Besta,4
+41,NIH - National Institutes of Health,National Institutes of Health,4
+42,ICRP - International Cancer Research Partnership,University of Naples Federico II,4
+43,ICRP - International Cancer Research Partnership,University of Iowa,4
+44,ICRP - International Cancer Research Partnership,Massachusetts General Hospital,4
+45,ICRP - International Cancer Research Partnership,Johns Hopkins University,4
+46,NIH - National Institutes of Health,Johns Hopkins University,4
+47,NIH - National Institutes of Health,University of Iowa,4
+48,US Federal Funders,University of Iowa,4
+49,US Federal Funders,United States Department of Veterans Affairs,4
+50,ICRP - International Cancer Research Partnership,United States Department of Veterans Affairs,4
+51,ICRP - International Cancer Research Partnership,European Organisation for Research and Treatment of Cancer,4
+52,US Federal Funders,National Institutes of Health,4
+53,NIH - National Institutes of Health,United States Department of Veterans Affairs,4
+54,US Federal Funders,Massachusetts General Hospital,4
+55,ICRP - International Cancer Research Partnership,University of Minnesota System,3
+56,HRA - Health Research Alliance,Alzheimer's Association,3
+57,ICRP - International Cancer Research Partnership,International Agency for Research on Cancer,3
+58,NIH - National Institutes of Health,University of Miami,3
+59,ICRP - International Cancer Research Partnership,Vanderbilt University,3
+60,cOAlition S,European Organisation for Research and Treatment of Cancer,3
+61,NIH - National Institutes of Health,Eli Lilly (United States),3
+62,ICRP - International Cancer Research Partnership,Muscular Dystrophy Association,3
+63,ICRP - International Cancer Research Partnership,National Institute on Aging,3
+64,ICRP - International Cancer Research Partnership,Medtronic (United States),3
+65,ICRP - International Cancer Research Partnership,Leibniz Association,3
+66,AMRC - Association of Medical Research Charities,Cancer Research UK,3
+67,ICRP - International Cancer Research Partnership,Alzheimer's Association,3
+68,US Federal Funders,Vanderbilt University,3
+69,US Federal Funders,University of Minnesota System,3
+70,NIH - National Institutes of Health,Muscular Dystrophy Association,3
+71,ICRP - International Cancer Research Partnership,Cancer Research UK,3
+72,ICRP - International Cancer Research Partnership,Washington University in St. Louis,3
+73,HRA - Health Research Alliance,Children's Hospital of Philadelphia,3
+74,HRA - Health Research Alliance,National Institute of Neurological Disorders and Stroke,3
+75,HRA - Health Research Alliance,University of Rochester,3
+76,HRA - Health Research Alliance,National Institute on Aging,3
+77,HRA - Health Research Alliance,Washington University in St. Louis,3
+78,ICRP - International Cancer Research Partnership,Eli Lilly (United States),3
+79,NIH - National Institutes of Health,University of Minnesota System,3
+80,ICRP - International Cancer Research Partnership,Ministero della Salute,3
+81,US Federal Funders,Eli Lilly (United States),3
+82,cOAlition S,University College London,3
+83,US Federal Funders,National Institute on Aging,3
+84,ICRP - International Cancer Research Partnership,Imperial College London,3
+85,ICRP - International Cancer Research Partnership,University of Paris-Sud,3
+86,US Federal Funders,Alzheimer's Association,3
+87,US Federal Funders,Muscular Dystrophy Association,3
+88,US Federal Funders,University of Miami,3
+89,NIH - National Institutes of Health,Vanderbilt University,3
+90,EC & ERC - European Union,University College London,3
+91,NIH - National Institutes of Health,Washington University in St. Louis,3
+92,HRA - Health Research Alliance,Muscular Dystrophy Association,3
+93,US Federal Funders,Washington University in St. Louis,3
+94,NIH - National Institutes of Health,Alzheimer's Association,3
+95,ICRP - International Cancer Research Partnership,German Cancer Research Center,3
+96,NIH - National Institutes of Health,National Institute on Aging,3
+97,ICRP - International Cancer Research Partnership,University of Miami,3
+98,ICRP - International Cancer Research Partnership,University of Colorado Denver,2
+99,EC & ERC - European Union,University of Tartu,2
+100,US Federal Funders,University of Colorado Denver,2
+101,HRA - Health Research Alliance,University of Iowa,2
+102,HRA - Health Research Alliance,University of Miami,2
+103,HRA - Health Research Alliance,Stanford University,2
+104,NIH - National Institutes of Health,Wayne State University,2
+105,cOAlition S,University of Oxford,2
+106,ICRP - International Cancer Research Partnership,National Health and Medical Research Council,2
+107,cOAlition S,World Health Organization,2
+108,cOAlition S,National Health and Medical Research Council,2
+109,ICRP - International Cancer Research Partnership,University of Murcia,2
+110,NIH - National Institutes of Health,United States Food and Drug Administration,2
+111,ICRP - International Cancer Research Partnership,Maastricht University,2
+112,NIH - National Institutes of Health,University of Washington,2
+113,ICRP - International Cancer Research Partnership,Mario Negri Sud Foundation,2
+114,cOAlition S,Swiss National Science Foundation,2
+115,cOAlition S,KU Leuven,2
+116,ICRP - International Cancer Research Partnership,Roche (United States),2
+117,HRA - Health Research Alliance,University of Minnesota System,2
+118,EC & ERC - European Union,Oxford University Hospitals NHS Trust,2
+119,cOAlition S,Oxford University Hospitals NHS Trust,2
+120,AMRC - Association of Medical Research Charities,Trinity College Dublin,2
+121,HRA - Health Research Alliance,Leukemia and Lymphoma Society,2
+122,HRA - Health Research Alliance,Massachusetts General Hospital,2
+123,ICRP - International Cancer Research Partnership,University of Genoa,2
+124,cOAlition S,Medical Research Council,2
+125,EC & ERC - European Union,University of Zurich,2
+126,AMRC - Association of Medical Research Charities,University of Leeds,2
+127,US Federal Funders,Eisai (Japan),2
+128,ICRP - International Cancer Research Partnership,AstraZeneca (United Kingdom),2
+129,UKRI - UK Research and Innovation,European Organisation for Research and Treatment of Cancer,2
+130,AMRC - Association of Medical Research Charities,European Commission,2
+131,AMRC - Association of Medical Research Charities,Motor Neurone Disease Association,2
+132,AMRC - Association of Medical Research Charities,Pfizer (United States),2
+133,ICRP - International Cancer Research Partnership,Aarhus University,2
+134,cOAlition S,Ministero della Salute,2
+135,NIHR - National Institute for Health Research,University of Oxford,2
+136,UKRI - UK Research and Innovation,Medical Research Council,2
+137,ICRP - International Cancer Research Partnership,Pfizer (United States),2
+138,ICRP - International Cancer Research Partnership,Danish Cancer Society,2
+139,US Federal Funders,Boston Children's Hospital,2
+140,ICRP - International Cancer Research Partnership,National Cancer Centre,2
+141,cOAlition S,Comunidad de Madrid,2
+142,AMRC - Association of Medical Research Charities,Medical Research Council,2
+143,US Federal Funders,University of Washington,2
+144,US Federal Funders,Roche (United States),2
+145,HRA - Health Research Alliance,Wayne State University,2
+146,ICRP - International Cancer Research Partnership,Dutch Cancer Society,2
+147,ICRP - International Cancer Research Partnership,University of Oxford,2
+148,EC & ERC - European Union,KU Leuven,2
+149,AMRC - Association of Medical Research Charities,Istituto Superiore di Sanità,2
+150,NIH - National Institutes of Health,University of Colorado Denver,2
+151,ICRP - International Cancer Research Partnership,Eisai (Japan),2
+152,EC & ERC - European Union,Ministero della Salute,2
+153,US Federal Funders,Institut Gustave Roussy,2
+154,NIH - National Institutes of Health,Institut Gustave Roussy,2
+155,HRA - Health Research Alliance,Johns Hopkins University,2
+156,cOAlition S,Mario Negri Sud Foundation,2
+157,ICRP - International Cancer Research Partnership,Umeå University,2
+158,HRA - Health Research Alliance,Eisai (Japan),2
+159,EC & ERC - European Union,Comunidad de Madrid,2
+160,ICRP - International Cancer Research Partnership,Wayne State University,2
+161,ICRP - International Cancer Research Partnership,Medical Research Council,2
+162,cOAlition S,University of Zurich,2
+163,HRA - Health Research Alliance,University of Colorado Denver,2
+164,ICRP - International Cancer Research Partnership,University of Washington,2
+165,US Federal Funders,Pfizer (United States),2
+166,AMRC - Association of Medical Research Charities,University of Sheffield,2
+167,ICRP - International Cancer Research Partnership,Queen's University,2
+168,EC & ERC - European Union,University of Oxford,2
+169,AMRC - Association of Medical Research Charities,KU Leuven,2
+170,AMRC - Association of Medical Research Charities,Amgen (United States),2
+171,ICRP - International Cancer Research Partnership,United States Food and Drug Administration,2
+172,ICRP - International Cancer Research Partnership,University Medical Center Groningen,2
+173,US Federal Funders,European Organisation for Research and Treatment of Cancer,2
+174,AMRC - Association of Medical Research Charities,University Medical Center Utrecht,2
+175,ICRP - International Cancer Research Partnership,UiT The Arctic University of Norway,2
+176,NIH - National Institutes of Health,Eisai (Japan),2
+177,ICRP - International Cancer Research Partnership,Bayer (Germany),2
+178,US Federal Funders,Wayne State University,2
+179,ICRP - International Cancer Research Partnership,University of Padua,2
+180,NIHR - National Institute for Health Research,University College London,2
+181,HRA - Health Research Alliance,University of Pennsylvania,2
+182,cOAlition S,University of Tartu,2
+183,NIH - National Institutes of Health,Roche (United States),2
+184,ICRP - International Cancer Research Partnership,University of Cambridge,2
+185,US Federal Funders,National Institute of Allergy and Infectious Diseases,1
+186,NIH - National Institutes of Health,Duke University,1
+187,ICRP - International Cancer Research Partnership,Ministère des Solidarités et de la Santé,1
+188,NIH - National Institutes of Health,New York University Langone Medical Center,1
+189,ICRP - International Cancer Research Partnership,East Carolina University,1
+190,AMRC - Association of Medical Research Charities,Institut Gustave Roussy,1
+191,AMRC - Association of Medical Research Charities,National Center for HIV/AIDS Viral Hepatitis STD and TB Prevention,1
+192,EC & ERC - European Union,Baxter (Austria),1
+193,EC & ERC - European Union,Medical University of Warsaw,1
+194,NIH - National Institutes of Health,University of Utah,1
+195,ICRP - International Cancer Research Partnership,University of Alabama at Birmingham,1
+196,EC & ERC - European Union,European Research Council,1
+197,NIH - National Institutes of Health,Northwestern University,1
+198,ICRP - International Cancer Research Partnership,Eunice Kennedy Shriver National Institute of Child Health and Human Development,1
+199,NIH - National Institutes of Health,European Organisation for Research and Treatment of Cancer,1
+200,ICRP - International Cancer Research Partnership,Radboud University Nijmegen Medical Centre,1
+201,NIH - National Institutes of Health,Harvard University,1
+202,NIH - National Institutes of Health,Boston Children's Hospital,1
+203,US Federal Funders,Boston University,1
+204,AMRC - Association of Medical Research Charities,German Cancer Aid,1
+205,cOAlition S,King's College London,1
+206,EC & ERC - European Union,Boehringer Ingelheim (Germany),1
+207,cOAlition S,Baylor College of Medicine,1
+208,AMRC - Association of Medical Research Charities,Boehringer Ingelheim (Germany),1
+209,AMRC - Association of Medical Research Charities,Astellas Pharma (Japan),1
+210,ICRP - International Cancer Research Partnership,Dana-Farber Cancer Institute,1
+211,cOAlition S,University of Birmingham,1
+212,HRA - Health Research Alliance,Melanoma Research Alliance,1
+213,EC & ERC - European Union,University of Giessen,1
+214,cOAlition S,Erasmus MC,1
+215,US Federal Funders,Eunice Kennedy Shriver National Institute of Child Health and Human Development,1
+216,ICRP - International Cancer Research Partnership,Lawson Health Research Institute,1
+217,NIH - National Institutes of Health,University of Alabama at Birmingham,1
+218,cOAlition S,National Institute for Health and Care Research,1
+219,ICRP - International Cancer Research Partnership,Universität Hamburg,1
+220,cOAlition S,University of Pennsylvania,1
+221,EC & ERC - European Union,University of Basel,1
+222,cOAlition S,Ben-Gurion University of the Negev,1
+223,AMRC - Association of Medical Research Charities,National Cancer Institute,1
+224,cOAlition S,University of Milano-Bicocca,1
+225,ICRP - International Cancer Research Partnership,Cambridge University Hospitals NHS Foundation Trust,1
+226,ICRP - International Cancer Research Partnership,Emory University,1
+227,EC & ERC - European Union,University of Florence,1
+228,EC & ERC - European Union,European Society of Cardiology,1
+229,AMRC - Association of Medical Research Charities,University of London,1
+230,UKRI - UK Research and Innovation,UK Research and Innovation,1
+231,EC & ERC - European Union,National Institute for Health and Care Research,1
+232,ICRP - International Cancer Research Partnership,New York University Langone Medical Center,1
+233,NIH - National Institutes of Health,Pfizer (United States),1
+234,AMRC - Association of Medical Research Charities,Oxford University Hospitals NHS Trust,1
+235,EC & ERC - European Union,Karolinska Institutet,1
+236,EC & ERC - European Union,Hannover Medical School,1
+237,EC & ERC - European Union,UiT The Arctic University of Norway,1
+238,EC & ERC - European Union,University of Glasgow,1
+239,ICRP - International Cancer Research Partnership,Augusta University,1
+240,ICRP - International Cancer Research Partnership,National Institute of Allergy and Infectious Diseases,1
+241,AMRC - Association of Medical Research Charities,Versus Arthritis,1
+242,cOAlition S,University of Giessen,1
+243,cOAlition S,Assistance Publique - Hôpitaux de Paris,1
+244,NIH - National Institutes of Health,University Medical Center Groningen,1
+245,NIH - National Institutes of Health,Eunice Kennedy Shriver National Institute of Child Health and Human Development,1
+246,ICRP - International Cancer Research Partnership,University of Missouri–Kansas City,1
+247,AMRC - Association of Medical Research Charities,Johnson & Johnson (United States),1
+248,HRA - Health Research Alliance,Eli Lilly (United States),1
+249,cOAlition S,Takeda (United States),1
+250,US Federal Funders,Johnson & Johnson (United States),1
+251,cOAlition S,University of Leeds,1
+252,ICRP - International Cancer Research Partnership,Northwestern University,1
+253,ICRP - International Cancer Research Partnership,Johnson & Johnson (United States),1
+254,EC & ERC - European Union,Baylor College of Medicine,1
+255,EC & ERC - European Union,Mario Negri Sud Foundation,1
+256,NIH - National Institutes of Health,University of Antwerp,1
+257,cOAlition S,Motor Neurone Disease Association,1
+258,US Federal Funders,Movember Foundation,1
+259,US Federal Funders,Augusta University,1
+260,cOAlition S,Heidelberg University,1
+261,ICRP - International Cancer Research Partnership,University of Calgary,1
+262,ICRP - International Cancer Research Partnership,United States Department of Defense,1
+263,US Federal Funders,United States Department of Health and Human Services,1
+264,US Federal Funders,Queen's University,1
+265,ICRP - International Cancer Research Partnership,General Electric (United Kingdom),1
+266,ICRP - International Cancer Research Partnership,Charcot-Marie-Tooth Association,1
+267,cOAlition S,"University of Campania ""Luigi Vanvitelli""",1
+268,cOAlition S,University of Glasgow,1
+269,cOAlition S,UK Research and Innovation,1
+270,NIHR - National Institute for Health Research,Stroke Association,1
+271,cOAlition S,Sanofi (United States),1
+272,EC & ERC - European Union,Erasmus MC,1
+273,HRA - Health Research Alliance,National Institutes of Health,1
+274,HRA - Health Research Alliance,Roche (United States),1
+275,cOAlition S,Queen's University,1
+276,NIH - National Institutes of Health,University of Chicago,1
+277,AMRC - Association of Medical Research Charities,National Cancer Centre,1
+278,cOAlition S,Astellas Pharma (Japan),1
+279,cOAlition S,University of Liverpool,1
+280,CDC - Centers for Disease Control and Prevention,European Organisation for Research and Treatment of Cancer,1
+281,ICRP - International Cancer Research Partnership,Harvard University,1
+282,cOAlition S,University of Florence,1
+283,ICRP - International Cancer Research Partnership,University of London,1
+284,HRA - Health Research Alliance,Charcot-Marie-Tooth Association,1
+285,EC & ERC - European Union,Cardiff University,1
+286,US Federal Funders,United States Department of Defense,1
+287,EC & ERC - European Union,University of Birmingham,1
+288,ICRP - International Cancer Research Partnership,Oncology Nursing Society,1
+289,NIH - National Institutes of Health,University of London,1
+290,EC & ERC - European Union,University of Pennsylvania,1
+291,EC & ERC - European Union,University Medical Center Utrecht,1
+292,US Federal Funders,University of Virginia,1
+293,EC & ERC - European Union,University of Bologna,1
+294,AMRC - Association of Medical Research Charities,Merck (Germany),1
+295,ICRP - International Cancer Research Partnership,University of Toronto,1
+296,US Federal Funders,Fox Chase Cancer Center,1
+297,AMRC - Association of Medical Research Charities,Movember Foundation,1
+298,NIH - National Institutes of Health,University of Michigan–Ann Arbor,1
+299,cOAlition S,Semmelweis University,1
+300,cOAlition S,Baxter (Austria),1
+301,US Federal Funders,National Institute of Arthritis and Musculoskeletal and Skin Diseases,1
+302,US Federal Funders,Cancer Research UK,1
+303,HRA - Health Research Alliance,University of Genoa,1
+304,US Federal Funders,Northwestern University,1
+305,AMRC - Association of Medical Research Charities,Pelican Cancer Foundation,1
+306,ICRP - International Cancer Research Partnership,German Cancer Aid,1
+307,cOAlition S,"St George's, University of London",1
+308,ICRP - International Cancer Research Partnership,University of Antwerp,1
+309,NIH - National Institutes of Health,Oxford University Hospitals NHS Trust,1
+310,US Federal Funders,University Medical Center Groningen,1
+311,US Federal Funders,University of Birmingham,1
+312,cOAlition S,Instituto de Salud Carlos III,1
+313,AMRC - Association of Medical Research Charities,MSD (United States),1
+314,DoD - United States Department of Defense,United States Department of Defense,1
+315,EC & ERC - European Union,Trinity College Dublin,1
+316,HRA - Health Research Alliance,Amyotrophic Lateral Sclerosis Association,1
+317,cOAlition S,Karolinska Institutet,1
+318,AMRC - Association of Medical Research Charities,National Institute for Health and Care Research,1
+319,US Federal Funders,Melanoma Research Alliance,1
+320,AMRC - Association of Medical Research Charities,Cambridge University Hospitals NHS Foundation Trust,1
+321,cOAlition S,Cardiff University,1
+322,ICRP - International Cancer Research Partnership,Boston University,1
+323,NIH - National Institutes of Health,University of Missouri–Kansas City,1
+324,ICRP - International Cancer Research Partnership,University of Michigan–Ann Arbor,1
+325,UKRI - UK Research and Innovation,King's College London,1
+326,US Federal Funders,University of British Columbia,1
+327,AMRC - Association of Medical Research Charities,University of Pennsylvania,1
+328,EC & ERC - European Union,Istituto Superiore di Sanità,1
+329,NIH - National Institutes of Health,East Carolina University,1
+330,cOAlition S,University of Erlangen-Nuremberg,1
+331,cOAlition S,Hannover Medical School,1
+332,NIH - National Institutes of Health,Cancer Research UK,1
+333,ICRP - International Cancer Research Partnership,University of Utah,1
+334,EC & ERC - European Union,University of Sheffield,1
+335,US Federal Funders,National Center for HIV/AIDS Viral Hepatitis STD and TB Prevention,1
+336,NIH - National Institutes of Health,National Institute of Allergy and Infectious Diseases,1
+337,NIHR - National Institute for Health Research,Takeda (United States),1
+338,cOAlition S,University of East Anglia,1
+339,NIH - National Institutes of Health,Boston University,1
+340,AMRC - Association of Medical Research Charities,Stroke Association,1
+341,AMRC - Association of Medical Research Charities,AbbVie (United States),1
+342,cOAlition S,Trinity College Dublin,1
+343,US Federal Funders,University of Missouri–Kansas City,1
+344,US Federal Funders,University of Antwerp,1
+345,cOAlition S,Newcastle upon Tyne Hospitals NHS Foundation Trust,1
+346,US Federal Funders,University of Chicago,1
+347,EC & ERC - European Union,Sanofi (United States),1
+348,AMRC - Association of Medical Research Charities,Dutch Cancer Society,1
+349,EC & ERC - European Union,Assistance Publique - Hôpitaux de Paris,1
+350,EC & ERC - European Union,Semmelweis University,1
+351,AMRC - Association of Medical Research Charities,Istituto Neurologico Carlo Besta,1
+352,AMRC - Association of Medical Research Charities,Roche (United States),1
+353,EC & ERC - European Union,Aristotle University of Thessaloniki,1
+354,HRA - Health Research Alliance,Cornell University,1
+355,EC & ERC - European Union,Ludwig-Maximilians-Universität München,1
+356,US Federal Funders,Columbia University,1
+357,cOAlition S,University of Leicester,1
+358,cOAlition S,Ludwig-Maximilians-Universität München,1
+359,NIHR - National Institute for Health Research,European Commission,1
+360,ICRP - International Cancer Research Partnership,University of Birmingham,1
+361,US Federal Funders,Duke University,1
+362,EC & ERC - European Union,Astellas Pharma (Japan),1
+363,NIH - National Institutes of Health,University of Connecticut,1
+364,US Federal Funders,University of Connecticut,1
+365,cOAlition S,Medical University of Warsaw,1
+366,cOAlition S,Aristotle University of Thessaloniki,1
+367,EC & ERC - European Union,University of Leeds,1
+368,cOAlition S,Charles University,1
+369,DoD - United States Department of Defense,Alliance for Clinical Trials in Oncology,1
+370,cOAlition S,University of Granada,1
+371,AMRC - Association of Medical Research Charities,University of Oxford,1
+372,US Federal Funders,University of Michigan–Ann Arbor,1
+373,AMRC - Association of Medical Research Charities,Roche (Switzerland),1
+374,EC & ERC - European Union,Ben-Gurion University of the Negev,1
+375,cOAlition S,UiT The Arctic University of Norway,1
+376,cOAlition S,Boehringer Ingelheim (Germany),1
+377,cOAlition S,Spanish National Centre for Cardiovascular Research,1
+378,ICRP - International Cancer Research Partnership,Bristol-Myers Squibb (United States),1
+379,ICRP - International Cancer Research Partnership,New York University,1
+380,EC & ERC - European Union,University of Liverpool,1
+381,US Federal Funders,University of Utah,1
+382,cOAlition S,European Society of Cardiology,1
+383,HRA - Health Research Alliance,Johnson & Johnson (United States),1
+384,NIH - National Institutes of Health,University of Birmingham,1
+385,NIH - National Institutes of Health,New York University,1
+386,ICRP - International Cancer Research Partnership,University Health Network,1
+387,cOAlition S,AstraZeneca (United Kingdom),1
+388,cOAlition S,University of Antwerp,1
+389,EC & ERC - European Union,University of Edinburgh,1
+390,cOAlition S,University of Manchester,1
+391,AMRC - Association of Medical Research Charities,NHS Greater Glasgow and Clyde,1
+392,US Federal Funders,University of London,1
+393,NIH - National Institutes of Health,Bayer (Germany),1
+394,AMRC - Association of Medical Research Charities,Bowel Research UK,1
+395,ICRP - International Cancer Research Partnership,National Institute of Arthritis and Musculoskeletal and Skin Diseases,1
+396,EC & ERC - European Union,"St George's, University of London",1
+397,US Federal Funders,Charcot-Marie-Tooth Association,1
+398,HRA - Health Research Alliance,Crohn's and Colitis Foundation,1
+399,EC & ERC - European Union,Charles University,1
+400,ICRP - International Cancer Research Partnership,University of Virginia,1
+401,EC & ERC - European Union,University of Erlangen-Nuremberg,1
+402,EC & ERC - European Union,Charité - University Medicine Berlin,1
+403,AMRC - Association of Medical Research Charities,Alliance for Clinical Trials in Oncology,1
+404,cOAlition S,University of Sheffield,1
+405,NIH - National Institutes of Health,Movember Foundation,1
+406,ICRP - International Cancer Research Partnership,University of Connecticut,1
+407,NIH - National Institutes of Health,AstraZeneca (United Kingdom),1
+408,NIH - National Institutes of Health,Emory University,1
+409,ICRP - International Cancer Research Partnership,Oxford University Hospitals NHS Trust,1
+410,ICRP - International Cancer Research Partnership,Mayo Clinic,1
+411,ICRP - International Cancer Research Partnership,Leiden University Medical Center,1
+412,ICRP - International Cancer Research Partnership,Movember Foundation,1
+413,HRA - Health Research Alliance,National Cancer Institute,1
+414,DoD - United States Department of Defense,Bayer (Germany),1
+415,NIH - National Institutes of Health,University of British Columbia,1
+416,ICRP - International Cancer Research Partnership,Aarhus University Hospital,1
+417,US Federal Funders,Cambridge University Hospitals NHS Foundation Trust,1
+418,cOAlition S,University of Bologna,1
+419,EC & ERC - European Union,Deutsche Forschungsgemeinschaft,1
+420,US Federal Funders,Harvard University,1
+421,US Federal Funders,Oxford University Hospitals NHS Trust,1
+422,ICRP - International Cancer Research Partnership,University of Chicago,1
+423,EC & ERC - European Union,University of Antwerp,1
+424,US Federal Funders,East Carolina University,1
+425,US Federal Funders,Emory University,1
+426,AMRC - Association of Medical Research Charities,Capital Region of Denmark,1
+427,NIH - National Institutes of Health,Queen's University,1
+428,AMRC - Association of Medical Research Charities,University College London,1
+429,ICRP - International Cancer Research Partnership,Columbia University,1
+430,NIH - National Institutes of Health,Columbia University,1
+431,AMRC - Association of Medical Research Charities,Netherlands Institute for Health Services Research,1
+432,NIH - National Institutes of Health,Melanoma Research Alliance,1
+433,NIH - National Institutes of Health,Johnson & Johnson (United States),1
+434,HRA - Health Research Alliance,Mario Negri Sud Foundation,1
+435,cOAlition S,University Medical Center Utrecht,1
+436,US Federal Funders,NHS Greater Glasgow and Clyde,1
+437,cOAlition S,Charité - University Medicine Berlin,1
+438,EC & ERC - European Union,European Organisation for Research and Treatment of Cancer,1
+439,ICRP - International Cancer Research Partnership,Boston Children's Hospital,1
+440,UKRI - UK Research and Innovation,Queen's University,1
+441,AMRC - Association of Medical Research Charities,German Cancer Research Center,1
+442,ICRP - International Cancer Research Partnership,Fox Chase Cancer Center,1
+443,EC & ERC - European Union,Newcastle upon Tyne Hospitals NHS Foundation Trust,1
+444,ICRP - International Cancer Research Partnership,University of British Columbia,1
+445,EC & ERC - European Union,"University of Campania ""Luigi Vanvitelli""",1
+446,HRA - Health Research Alliance,Patient-Centered Outcomes Research Institute,1
+447,NIH - National Institutes of Health,National Institute of Arthritis and Musculoskeletal and Skin Diseases,1
+448,ICRP - International Cancer Research Partnership,Duke University,1
+449,ICRP - International Cancer Research Partnership,The University of Texas MD Anderson Cancer Center,1
+450,EC & ERC - European Union,University of Milano-Bicocca,1
+451,US Federal Funders,New York University,1
+452,EC & ERC - European Union,Takeda (United States),1
+453,EC & ERC - European Union,University of East Anglia,1
+454,NIH - National Institutes of Health,Augusta University,1
+455,NIHR - National Institute for Health Research,Oxford University Hospitals NHS Trust,1
+456,NIH - National Institutes of Health,Fox Chase Cancer Center,1
+457,US Federal Funders,New York University Langone Medical Center,1
+458,US Federal Funders,AstraZeneca (United Kingdom),1
+459,cOAlition S,University of Basel,1
+460,US Federal Funders,Bayer (Germany),1
+461,NIHR - National Institute for Health Research,Bupa UK Foundation,1
+462,NIH - National Institutes of Health,United States Department of Defense,1
+463,NIH - National Institutes of Health,Charcot-Marie-Tooth Association,1
+464,DoD - United States Department of Defense,National Cancer Institute,1
+465,NIH - National Institutes of Health,University of Virginia,1
+466,US Federal Funders,University of Alabama at Birmingham,1
+467,NIH - National Institutes of Health,Cambridge University Hospitals NHS Foundation Trust,1
+468,ICRP - International Cancer Research Partnership,Melanoma Research Alliance,1
+469,AMRC - Association of Medical Research Charities,Universität Hamburg,1
+470,EC & ERC - European Union,Motor Neurone Disease Association,1
+471,cOAlition S,Istituto Superiore di Sanità,1
+472,CDC - Centers for Disease Control and Prevention,National Center for HIV/AIDS Viral Hepatitis STD and TB Prevention,1
+473,cOAlition S,Deutsche Forschungsgemeinschaft,1
+474,ICRP - International Cancer Research Partnership,The University of Sydney,1
+475,AMRC - Association of Medical Research Charities,Multiple Sclerosis Society,1
+476,EC & ERC - European Union,University of Leicester,1
+477,EC & ERC - European Union,Heidelberg University,1
+478,EC & ERC - European Union,University of Granada,1
+479,EC & ERC - European Union,University of Manchester,1
