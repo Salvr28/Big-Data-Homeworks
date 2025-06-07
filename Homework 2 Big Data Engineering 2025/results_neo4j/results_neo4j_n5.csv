@@ -1,0 +1,21 @@
+Condition,City,Count per Condition-City
+breast cancer,Amsterdam,32
+multiple myeloma,Akashi,28
+ulcerative colitis,?ód?,26
+crohn's disease,?ód?,25
+coronary artery disease,Ancona,24
+non-small cell lung cancer,Amsterdam,24
+myelodysplastic syndromes,Ancona,22
+"carcinoma, non-small-cell lung",Amsterdam,20
+ovarian cancer,Amsterdam,19
+leukemia,Amsterdam,19
+hemophilia a,Ankara,18
+chronic lymphocytic leukemia,Ancona,18
+acute myeloid leukemia,Ancona,17
+chronic myeloid leukemia,Amsterdam,16
+pulmonary arterial hypertension,Akashi,16
+heart failure,Ancona,16
+prostate cancer,Ankara,14
+myelofibrosis,Amsterdam,14
+atrial fibrillation,?ód?,14
+idiopathic pulmonary fibrosis,?ód?,13

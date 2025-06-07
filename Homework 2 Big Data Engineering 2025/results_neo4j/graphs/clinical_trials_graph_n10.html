@@ -1,0 +1,321 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 750px;
+                 background-color: #222222;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#ADD8E6", "font": {"color": "white"}, "id": "86980", "label": "ClinicalTrial", "shape": "dot", "title": "ID: 86980\nLabels: ClinicalTrial\nProperties: {\u0027Intervention\u0027: \u0027placebo for risankizumab (Drug), risankizumab IV (Drug), risankizumab SC (Drug)\u0027, \u0027Phase\u0027: \u0027Phase 3\u0027, \u0027StudyType\u0027: \u0027Interventional\u0027, \u0027NumberOfParticipants\u0027: 931, \u0027BriefTitle\u0027: \"A Study of the Efficacy and Safety of Risankizumab in Participants With Moderately to Severely Active Crohn\u0027s Disease\", \u0027Abstract\u0027: \"The purpose of this study is to evaluate the efficacy and safety of risankizumab versus placebo during induction therapy in participants with moderately to severely active Crohn\u0027s disease (CD).\", \u0027Title\u0027: \"A Multicenter, Randomized, Double-Blind, Placebo Controlled Induction Study of the Efficacy and Safety of Risankizumab in Subjects With Moderately to Severely Active Crohn\u0027s Disease\", \u0027SourceLinkout\u0027: \u0027https://clinicaltrials.gov/show/NCT03105128\u0027, \u0027Gender\u0027: \u0027All\u0027, \u0027Registry\u0027: \u0027ClinicalTrials.gov\u0027, \u0027EndDate\u0027: neo4j.time.Date(2021, 4, 14), \u0027DimensionsURL\u0027: \u0027https://app.dimensions.ai/details/clinical_trial/NCT03105128\u0027, \u0027minAgeYears\u0027: 16.0, \u0027StartDate\u0027: neo4j.time.Date(2017, 5, 10), \u0027RecruitmentStatus\u0027: \u0027Completed\u0027, \u0027AltmetricAttentionScore\u0027: 1129.0, \u0027StartYear\u0027: 2017, \u0027TrialID\u0027: \u0027NCT03105128\u0027, \u0027CompletionYear\u0027: 2021, \u0027Acronym\u0027: \u0027\u0027, \u0027maxAgeYears\u0027: 80.0}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "53", "label": "Condition", "shape": "dot", "title": "ID: 53\nLabels: Condition\nProperties: {\u0027name\u0027: \"crohn\u0027s disease\"}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "41467", "label": "ClinicalTrial", "shape": "dot", "title": "ID: 41467\nLabels: ClinicalTrial\nProperties: {\u0027Intervention\u0027: \u0027Remdesivir (Drug), Standard of Care (Drug)\u0027, \u0027Phase\u0027: \u0027Phase 3\u0027, \u0027StudyType\u0027: \u0027Interventional\u0027, \u0027NumberOfParticipants\u0027: 4891, \u0027BriefTitle\u0027: \u0027Study to Evaluate the Safety and Antiviral Activity of Remdesivir (GS-5734\u2122) in Participants With Severe Coronavirus Disease (COVID-19)\u0027, \u0027Abstract\u0027: \u0027The primary objective of this study is to evaluate the efficacy of 2 remdesivir (RDV) regimens with respect to clinical status assessed by a 7-point ordinal scale on Day 14.\u0027, \u0027Title\u0027: \u0027A Phase 3 Randomized Study to Evaluate the Safety and Antiviral Activity of Remdesivir (GS-5734\u2122) in Participants With Severe COVID-19\u0027, \u0027SourceLinkout\u0027: \u0027https://clinicaltrials.gov/show/NCT04292899\u0027, \u0027Gender\u0027: \u0027All\u0027, \u0027Registry\u0027: \u0027ClinicalTrials.gov\u0027, \u0027EndDate\u0027: neo4j.time.Date(2020, 6, 30), \u0027DimensionsURL\u0027: \u0027https://app.dimensions.ai/details/clinical_trial/NCT04292899\u0027, \u0027minAgeYears\u0027: 12.0, \u0027StartDate\u0027: neo4j.time.Date(2020, 3, 6), \u0027RecruitmentStatus\u0027: \u0027Completed\u0027, \u0027AltmetricAttentionScore\u0027: 1081.0, \u0027StartYear\u0027: 2020, \u0027TrialID\u0027: \u0027NCT04292899\u0027, \u0027CompletionYear\u0027: 2020, \u0027Acronym\u0027: \u0027\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "41602", "label": "Condition", "shape": "dot", "title": "ID: 41602\nLabels: Condition\nProperties: {\u0027name\u0027: \u0027covid-19\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "86301", "label": "ClinicalTrial", "shape": "dot", "title": "ID: 86301\nLabels: ClinicalTrial\nProperties: {\u0027Intervention\u0027: \u0027risankizumab IV (Drug), placebo for risankizumab (Drug), risankizumab SC (Drug)\u0027, \u0027Phase\u0027: \u0027Phase 2/3\u0027, \u0027StudyType\u0027: \u0027Interventional\u0027, \u0027NumberOfParticipants\u0027: 1558, \u0027BriefTitle\u0027: \u0027A Multicenter, Randomized, Double-Blind, Placebo Controlled Induction Study to Evaluate the Efficacy and Safety of Risankizumab in Participants With Moderately to Severely Active Ulcerative Colitis\u0027, \u0027Abstract\u0027: \u0027The objectives of Sub-Study 1 are to evaluate the efficacy, safety, and pharmacokinetics of risankizumab as induction treatment in subjects with moderately to severely active ulcerative colitis (UC), and to identify the appropriate induction dose of risankizumab for further evaluation in Sub-Study 2.The objective of Sub-Study 2 is to evaluate the efficacy and safety of risankizumab compared to placebo in inducing clinical remission in subjects with moderately to severely active UC.\u0027, \u0027Title\u0027: \u0027A Multicenter, Randomized, Double-Blind, Placebo Controlled Induction Study to Evaluate the Efficacy and Safety of Risankizumab in Subjects With Moderately to Severely Active Ulcerative Colitis\u0027, \u0027SourceLinkout\u0027: \u0027https://clinicaltrials.gov/show/NCT03398148\u0027, \u0027Gender\u0027: \u0027All\u0027, \u0027Registry\u0027: \u0027ClinicalTrials.gov\u0027, \u0027EndDate\u0027: neo4j.time.Date(2023, 5, 11), \u0027DimensionsURL\u0027: \u0027https://app.dimensions.ai/details/clinical_trial/NCT03398148\u0027, \u0027minAgeYears\u0027: 16.0, \u0027StartDate\u0027: neo4j.time.Date(2018, 3, 7), \u0027RecruitmentStatus\u0027: \u0027Completed\u0027, \u0027AltmetricAttentionScore\u0027: 1061.0, \u0027StartYear\u0027: 2018, \u0027TrialID\u0027: \u0027NCT03398148\u0027, \u0027CompletionYear\u0027: 2023, \u0027Acronym\u0027: \u0027\u0027, \u0027maxAgeYears\u0027: 80.0}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "63484", "label": "Condition", "shape": "dot", "title": "ID: 63484\nLabels: Condition\nProperties: {\u0027name\u0027: \u0027ulcerative colitis (uc)\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "85500", "label": "ClinicalTrial", "shape": "dot", "title": "ID: 85500\nLabels: ClinicalTrial\nProperties: {\u0027Intervention\u0027: \u0027risankizumab (Drug), placebo for risankizumab (Drug)\u0027, \u0027Phase\u0027: \u0027Phase 3\u0027, \u0027StudyType\u0027: \u0027Interventional\u0027, \u0027NumberOfParticipants\u0027: 1242, \u0027BriefTitle\u0027: \u0027A Study to Assess the Efficacy and Safety of Risankizumab in Participants With Ulcerative Colitis\u0027, \u0027Abstract\u0027: \u0027The purpose of this study is to evaluate safety and efficacy of risankizumab in participants with ulcerative colitis (UC) in participants who responded to induction treatment with risankizumab in a prior AbbVie study of risankizumab in UC.This study consists of three sub-studies and a Continuous Treatment Extension (CTE): Substudy 1 is a 52-week, randomized, double-blind, placebo-controlled maintenance study; Substudy 2 is 52-week, randomized, exploratory maintenance study; and Substudy 3 is an open-label long-term extension study for participants who completed Substudy 1 or 2, or participants who responded to induction treatment in Study M16-067 with no final endoscopy due to the Covid-19 pandemic or due to the geopolitical conflict in Ukraine and surrounding impacted regions. The CTE is an open-label extension for Substudy 3 completers to ensure continuous treatment with risankizumab until such time that risankizumab becomes commercially available and/or the subject can access treatment locally or can transition to a Continued Treatment for Trial Participants Open-Label Extension study.\u0027, \u0027Title\u0027: \u0027A Multicenter, Randomized, Double-Blind, Placebo Controlled 52-Week Maintenance and an Open-Label Extension Study of the Efficacy and Safety of Risankizumab in Subjects With Ulcerative Colitis\u0027, \u0027SourceLinkout\u0027: \u0027https://clinicaltrials.gov/show/NCT03398135\u0027, \u0027Gender\u0027: \u0027All\u0027, \u0027Registry\u0027: \u0027ClinicalTrials.gov\u0027, \u0027EndDate\u0027: neo4j.time.Date(2028, 9, 25), \u0027DimensionsURL\u0027: \u0027https://app.dimensions.ai/details/clinical_trial/NCT03398135\u0027, \u0027minAgeYears\u0027: 16.0, \u0027StartDate\u0027: neo4j.time.Date(2018, 8, 28), \u0027RecruitmentStatus\u0027: \u0027Active, not recruiting\u0027, \u0027AltmetricAttentionScore\u0027: 1030.0, \u0027StartYear\u0027: 2018, \u0027TrialID\u0027: \u0027NCT03398135\u0027, \u0027CompletionYear\u0027: 2028, \u0027Acronym\u0027: \u0027\u0027, \u0027maxAgeYears\u0027: 80.0}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "58584", "label": "ClinicalTrial", "shape": "dot", "title": "ID: 58584\nLabels: ClinicalTrial\nProperties: {\u0027Intervention\u0027: \u0027Placebo for Upadacitinib (Drug), Upadacitinib (Drug)\u0027, \u0027Phase\u0027: \u0027Phase 3\u0027, \u0027StudyType\u0027: \u0027Interventional\u0027, \u0027NumberOfParticipants\u0027: 912, \u0027BriefTitle\u0027: \u0027Evaluation of Upadacitinib in Adolescent and Adult Patients With Moderate to Severe Atopic Dermatitis (Eczema)\u0027, \u0027Abstract\u0027: \u0027The objective of this study is to assess the efficacy and safety of upadacitinib for the treatment of adolescent and adult participants with moderate to severe atopic dermatitis (AD) who are candidates for systemic therapy.\\n\\nDetailed Description\\nThis study includes a 35-day screening period, a 16-week double-blind period, a blinded extension period up to Week 260, and a 30-day follow-up visit.Participants who meet eligibility criteria in the main study will be randomized in a 1:1:1 ratio to receive a daily oral dose of upadacitinib 30 mg or upadacitinib 15 mg or matching placebo. Upon completion of enrollment of 810 participants in the main study, a supplemental study will continue to enroll adolescents (adolescent sub-study) until a total of 180 adolescent participants are enrolled in the overall study (main study + adolescent sub-study).Randomization for the main study will be stratified by baseline disease severity (validated Investigator Global Assessment scale for Atopic Dermatitis [vIGA-AD] score of moderate [3] versus severe [4]), by geographic region (United States [US]/Puerto Rico/Canada, Japan, China, and Other), and by age (adolescent [ages 12 to 17] versus adult [ages 18 to 75]). The separate randomization for the adolescent sub-study will be stratified by baseline disease severity (moderate [vIGA-AD 3] vs. severe [vIGA-AD 4]) and by geographic region (US/Puerto Rico/Canada and Other).At Week 16 of the main study and the adolescent sub-study, participants in the placebo group will be re-randomized in a 1:1 ratio to receive daily oral doses of upadacitinib 30 mg or upadacitinib 15 mg in the blinded extension period. In the main study the re-randomization at Week 16 will be stratified by Week 16 50% improvement in Eczema Area and Severity Index [EASI 50] responder [yes/no], geographic region [US/Puerto Rico/Canada, China [Mainland], Japan, and other], and age group [adolescent/adult]. For the adolescent sub-study, the re-randomization will be stratified by EASI 50 responder (Yes/No) and by geographic region (US/Puerto Rico/Canada and Other).Participants originally randomized to upadacitinib will continue upadacitinib in the extension period at the same dose.Starting at the Week 4 visit, rescue treatment for AD may be provided at the discretion of the investigator if medically necessary.The Primary Analysis for the main study will be conducted after all ongoing participants have completed Week 16. In addition, a Primary Analysis for the adolescent population (including the adolescent participants from the main study and the adolescent sub-study) will be conducted after all ongoing adolescent participants have completed Week 16.\u0027, \u0027Title\u0027: \u0027A Phase 3 Randomized, Placebo-Controlled, Double-Blind Study to Evaluate Upadacitinib in Adolescent and Adult Subjects With Moderate to Severe Atopic Dermatitis\u0027, \u0027SourceLinkout\u0027: \u0027https://clinicaltrials.gov/show/NCT03569293\u0027, \u0027Gender\u0027: \u0027All\u0027, \u0027Registry\u0027: \u0027ClinicalTrials.gov\u0027, \u0027EndDate\u0027: neo4j.time.Date(2025, 10, 9), \u0027DimensionsURL\u0027: \u0027https://app.dimensions.ai/details/clinical_trial/NCT03569293\u0027, \u0027minAgeYears\u0027: 12.0, \u0027StartDate\u0027: neo4j.time.Date(2018, 8, 13), \u0027RecruitmentStatus\u0027: \u0027Active, not recruiting\u0027, \u0027AltmetricAttentionScore\u0027: 1010.0, \u0027StartYear\u0027: 2018, \u0027TrialID\u0027: \u0027NCT03569293\u0027, \u0027CompletionYear\u0027: 2025, \u0027Acronym\u0027: \u0027Measure Up 1\u0027, \u0027maxAgeYears\u0027: 75.0}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "11913", "label": "Condition", "shape": "dot", "title": "ID: 11913\nLabels: Condition\nProperties: {\u0027name\u0027: \u0027atopic dermatitis\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "58026", "label": "ClinicalTrial", "shape": "dot", "title": "ID: 58026\nLabels: ClinicalTrial\nProperties: {\u0027Intervention\u0027: \u0027Placebo (Biological), Risankizumab (Biological)\u0027, \u0027Phase\u0027: \u0027Phase 3\u0027, \u0027StudyType\u0027: \u0027Interventional\u0027, \u0027NumberOfParticipants\u0027: 444, \u0027BriefTitle\u0027: \u0027A Study Comparing Risankizumab to Placebo in Participants With Active Psoriatic Arthritis Including Those Who Have a History of Inadequate Response or Intolerance to Biologic Therapy(Ies)\u0027, \u0027Abstract\u0027: \u0027The purpose of this study is to evaluate the safety and efficacy of risankizumab in adults with moderately to severely active psoriatic arthritis (PsA).\\n\\nDetailed Description\\nThe study consists of a Screening Period (approximately 35 days), Period 1, Period 2, and a 20-week Follow-up Period. Period 1 is a 24-week randomized, double-blind, placebo-controlled, parallel-group period. Period 2 is the long-term period and starts at Week 24. To maintain the blind to the original treatment allocation, treatment at the Week 24 Visit is blinded: participants randomized to placebo receive blinded risankizumab 150 mg, and participants randomized to risankizumab receive blinded placebo. At Week 28 and for the remaining dosing visits (to Week 316), all participants receive open-label risankizumab 150 mg every 12 weeks. Participants remain blinded to the original randomization allocation for the duration of the study. The total study duration is 336 weeks including a telephone call 140 days (20 weeks) after last dose of study drug.\u0027, \u0027Title\u0027: \u0027A Phase 3, Randomized, Double-Blind Study Comparing Risankizumab to Placebo in Subjects With Active Psoriatic Arthritis Including Those Who Have a History of Inadequate Response or Intolerance to Biologic Therapy(Ies) (KEEPsAKE 2)\u0027, \u0027SourceLinkout\u0027: \u0027https://clinicaltrials.gov/show/NCT03671148\u0027, \u0027Gender\u0027: \u0027All\u0027, \u0027Registry\u0027: \u0027ClinicalTrials.gov\u0027, \u0027EndDate\u0027: neo4j.time.Date(2026, 6, 12), \u0027DimensionsURL\u0027: \u0027https://app.dimensions.ai/details/clinical_trial/NCT03671148\u0027, \u0027minAgeYears\u0027: 18.0, \u0027StartDate\u0027: neo4j.time.Date(2019, 3, 7), \u0027RecruitmentStatus\u0027: \u0027Active, not recruiting\u0027, \u0027AltmetricAttentionScore\u0027: 962.0, \u0027StartYear\u0027: 2019, \u0027TrialID\u0027: \u0027NCT03671148\u0027, \u0027CompletionYear\u0027: 2026, \u0027Acronym\u0027: \u0027KEEPsAKE2\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "58028", "label": "Condition", "shape": "dot", "title": "ID: 58028\nLabels: Condition\nProperties: {\u0027name\u0027: \u0027psoriatic arthritis (psa)\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "35019", "label": "ClinicalTrial", "shape": "dot", "title": "ID: 35019\nLabels: ClinicalTrial\nProperties: {\u0027Intervention\u0027: \u0027Lenvatinib (Drug), Everolimus (Drug), Pembrolizumab (Drug), Sunitinib (Drug)\u0027, \u0027Phase\u0027: \u0027Phase 3\u0027, \u0027StudyType\u0027: \u0027Interventional\u0027, \u0027NumberOfParticipants\u0027: 1069, \u0027BriefTitle\u0027: \u0027Lenvatinib/Everolimus or Lenvatinib/Pembrolizumab Versus Sunitinib Alone as Treatment of Advanced Renal Cell Carcinoma\u0027, \u0027Abstract\u0027: \u0027The primary purpose of the study is to demonstrate that lenvatinib in combination with everolimus (Arm A) or pembrolizumab (Arm B) is superior compared to sunitinib alone (Arm C) in improving progression-free survival (PFS) (by independent imaging review [IIR] using Response Evaluation Criteria in Solid Tumors [RECIST 1.1]) as first-line treatment in participants with advanced renal cell carcinoma (RCC).\u0027, \u0027Title\u0027: \u0027A Multicenter, Open-label, Randomized, Phase 3 Trial to Compare the Efficacy and Safety of Lenvatinib in Combination With Everolimus or Pembrolizumab Versus Sunitinib Alone in First-Line Treatment of Subjects With Advanced Renal Cell Carcinoma (CLEAR)\u0027, \u0027SourceLinkout\u0027: \u0027https://clinicaltrials.gov/show/NCT02811861\u0027, \u0027Gender\u0027: \u0027All\u0027, \u0027Registry\u0027: \u0027ClinicalTrials.gov\u0027, \u0027EndDate\u0027: neo4j.time.Date(2024, 7, 31), \u0027DimensionsURL\u0027: \u0027https://app.dimensions.ai/details/clinical_trial/NCT02811861\u0027, \u0027minAgeYears\u0027: 18.0, \u0027StartDate\u0027: neo4j.time.Date(2016, 10, 13), \u0027RecruitmentStatus\u0027: \u0027Active, not recruiting\u0027, \u0027AltmetricAttentionScore\u0027: 860.0, \u0027StartYear\u0027: 2016, \u0027TrialID\u0027: \u0027NCT02811861\u0027, \u0027CompletionYear\u0027: 2024, \u0027Acronym\u0027: \u0027CLEAR\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "87860", "label": "Condition", "shape": "dot", "title": "ID: 87860\nLabels: Condition\nProperties: {\u0027name\u0027: \u0027renal cell carcinoma\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "25473", "label": "ClinicalTrial", "shape": "dot", "title": "ID: 25473\nLabels: ClinicalTrial\nProperties: {\u0027Intervention\u0027: \u0027AG-120 (Drug), Placebo (Drug), Azacitidine (Drug)\u0027, \u0027Phase\u0027: \u0027Phase 3\u0027, \u0027StudyType\u0027: \u0027Interventional\u0027, \u0027NumberOfParticipants\u0027: 146, \u0027BriefTitle\u0027: \u0027Study of AG-120 (Ivosidenib) vs. Placebo in Combination With Azacitidine in Participants With Previously Untreated Acute Myeloid Leukemia With an IDH1 Mutation\u0027, \u0027Abstract\u0027: \u0027Study AG120-C-009 is a global, Phase 3, multicenter, double-blind, randomized, placebo-controlled clinical trial to evaluate the efficacy and safety of AG-120 (ivosidenib) + azacitidine vs placebo + azacitidine in adult participants with previously untreated IDH1m AML who are considered appropriate candidates for non-intensive therapy. The primary endpoint is event-free survival (EFS). The key secondary efficacy endpoints are overall survival (OS), rate of complete remission (CR), rate of CR and complete remission with partial hematologic recovery (CRh), and overall response rate (ORR). Participants eligible for study treatment based on Screening assessments will be randomized 1:1 to receive oral AG-120 or matched placebo, both administered in combination with subcutaneous (SC) or intravenous (IV) azacitidine. An estimated 200 participants will take part in the study.\u0027, \u0027Title\u0027: \u0027A Phase 3, Multicenter, Double-Blind, Randomized, Placebo-Controlled Study of AG-120 in Combination With Azacitidine in Subjects \u2265 18 Years of Age With Previously Untreated Acute Myeloid Leukemia With an IDH1 Mutation\u0027, \u0027SourceLinkout\u0027: \u0027https://clinicaltrials.gov/show/NCT03173248\u0027, \u0027Gender\u0027: \u0027All\u0027, \u0027Registry\u0027: \u0027ClinicalTrials.gov\u0027, \u0027EndDate\u0027: neo4j.time.Date(2024, 6, 30), \u0027DimensionsURL\u0027: \u0027https://app.dimensions.ai/details/clinical_trial/NCT03173248\u0027, \u0027minAgeYears\u0027: 18.0, \u0027StartDate\u0027: neo4j.time.Date(2017, 6, 26), \u0027RecruitmentStatus\u0027: \u0027Active, not recruiting\u0027, \u0027AltmetricAttentionScore\u0027: 834.0, \u0027StartYear\u0027: 2017, \u0027TrialID\u0027: \u0027NCT03173248\u0027, \u0027CompletionYear\u0027: 2024, \u0027Acronym\u0027: \u0027AGILE\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "25474", "label": "Condition", "shape": "dot", "title": "ID: 25474\nLabels: Condition\nProperties: {\u0027name\u0027: \u0027newly diagnosed acute myeloid leukemia (aml)\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "25476", "label": "Condition", "shape": "dot", "title": "ID: 25476\nLabels: Condition\nProperties: {\u0027name\u0027: \u0027untreated aml\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "25477", "label": "Condition", "shape": "dot", "title": "ID: 25477\nLabels: Condition\nProperties: {\u0027name\u0027: \u0027aml arising from myelodysplastic syndrome (mds)\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "88202", "label": "Condition", "shape": "dot", "title": "ID: 88202\nLabels: Condition\nProperties: {\u0027name\u0027: \u0027leukemia, myeloid, acute\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "61158", "label": "ClinicalTrial", "shape": "dot", "title": "ID: 61158\nLabels: ClinicalTrial\nProperties: {\u0027Intervention\u0027: \u0027Empagliflozin (Drug), Placebo (Drug)\u0027, \u0027Phase\u0027: \u0027Phase 3\u0027, \u0027StudyType\u0027: \u0027Interventional\u0027, \u0027NumberOfParticipants\u0027: 5988, \u0027BriefTitle\u0027: \u0027EMPagliflozin outcomE tRial in Patients With chrOnic heaRt Failure With Preserved Ejection Fraction (EMPEROR-Preserved)\u0027, \u0027Abstract\u0027: \"This is a study in adults with chronic heart failure. People with chronic heart failure may need to be hospitalised for their condition. Some people with chronic heart failure may eventually die from their condition. The purpose of the study is to find out whether a medicine called empagliflozin lowers the chances of patients having to go to hospital for heart failure and whether it improves their survival. The study is open to patients with a type of chronic heart failure called chronic heart failure with preserved ejection fraction.Participants stay in the study until researchers have enough information about how effective empagliflozin is. It is expected that participants who enter at the very beginning of the enrolment period may be in the study for over 3 years, while participants who enter near the end of the enrolment period may be in the study for less than 2 years. The participants are put into 2 groups. It is decided by chance who gets into which group. One group gets empagliflozin tablets every day and the other group gets placebo tablets every day. Placebo tablets look like empagliflozin tablets but contain no medicine.Participants visit the doctors regularly. During these visits, the doctors collect information about the participant\u0027s health. The doctors want to know how many patients had to go to hospital because of heart failure or who died from cardiovascular disease.\", \u0027Title\u0027: \u0027A Phase III Randomised, Double-blind Trial to Evaluate Efficacy and Safety of Once Daily Empagliflozin 10 mg Compared to Placebo, in Patients With Chronic Heart Failure With Preserved Ejection Fraction (HFpEF)\u0027, \u0027SourceLinkout\u0027: \u0027https://clinicaltrials.gov/show/NCT03057951\u0027, \u0027Gender\u0027: \u0027All\u0027, \u0027Registry\u0027: \u0027ClinicalTrials.gov\u0027, \u0027EndDate\u0027: neo4j.time.Date(2021, 4, 26), \u0027DimensionsURL\u0027: \u0027https://app.dimensions.ai/details/clinical_trial/NCT03057951\u0027, \u0027minAgeYears\u0027: 18.0, \u0027StartDate\u0027: neo4j.time.Date(2017, 3, 2), \u0027RecruitmentStatus\u0027: \u0027Completed\u0027, \u0027AltmetricAttentionScore\u0027: 831.0, \u0027StartYear\u0027: 2017, \u0027TrialID\u0027: \u0027NCT03057951\u0027, \u0027CompletionYear\u0027: 2021, \u0027Acronym\u0027: \u0027\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "54189", "label": "Condition", "shape": "dot", "title": "ID: 54189\nLabels: Condition\nProperties: {\u0027name\u0027: \u0027heart failure\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "41466", "label": "ClinicalTrial", "shape": "dot", "title": "ID: 41466\nLabels: ClinicalTrial\nProperties: {\u0027Intervention\u0027: \u0027Remdesivir (Drug), Standard of Care (Drug)\u0027, \u0027Phase\u0027: \u0027Phase 3\u0027, \u0027StudyType\u0027: \u0027Interventional\u0027, \u0027NumberOfParticipants\u0027: 1113, \u0027BriefTitle\u0027: \u0027Study to Evaluate the Safety and Antiviral Activity of Remdesivir (GS-5734\u2122) in Participants With Moderate Coronavirus Disease (COVID-19) Compared to Standard of Care Treatment\u0027, \u0027Abstract\u0027: \u0027The primary objective of this study was to evaluate the efficacy of 2 remdesivir (RDV) regimens compared to standard of care (SOC), with respect to clinical status assessed by a 7-point ordinal scale on Day 11.\u0027, \u0027Title\u0027: \u0027A Phase 3 Randomized Study to Evaluate the Safety and Antiviral Activity of Remdesivir (GS-5734\u2122) in Participants With Moderate COVID-19 Compared to Standard of Care Treatment\u0027, \u0027SourceLinkout\u0027: \u0027https://clinicaltrials.gov/show/NCT04292730\u0027, \u0027Gender\u0027: \u0027All\u0027, \u0027Registry\u0027: \u0027ClinicalTrials.gov\u0027, \u0027EndDate\u0027: neo4j.time.Date(2020, 6, 26), \u0027DimensionsURL\u0027: \u0027https://app.dimensions.ai/details/clinical_trial/NCT04292730\u0027, \u0027minAgeYears\u0027: 12.0, \u0027StartDate\u0027: neo4j.time.Date(2020, 3, 15), \u0027RecruitmentStatus\u0027: \u0027Completed\u0027, \u0027AltmetricAttentionScore\u0027: 823.0, \u0027StartYear\u0027: 2020, \u0027TrialID\u0027: \u0027NCT04292730\u0027, \u0027CompletionYear\u0027: 2020, \u0027Acronym\u0027: \u0027\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "71253", "label": "ClinicalTrial", "shape": "dot", "title": "ID: 71253\nLabels: ClinicalTrial\nProperties: {\u0027Intervention\u0027: \u0027Inotersen (Drug), Eplontersen (Drug)\u0027, \u0027Phase\u0027: \u0027Phase 3\u0027, \u0027StudyType\u0027: \u0027Interventional\u0027, \u0027NumberOfParticipants\u0027: 168, \u0027BriefTitle\u0027: \u0027NEURO-TTRansform: A Study to Evaluate the Efficacy and Safety of Eplontersen (Formerly Known as ION-682884, IONIS-TTR-LRx and AKCEA-TTR-LRx) in Participants With Hereditary Transthyretin-Mediated Amyloid Polyneuropathy\u0027, \u0027Abstract\u0027: \u0027The main objective of this study was to evaluate the efficacy of eplontersen as compared with the historical control of the placebo cohort in the NEURO-TTR trial (NCT01737398/2012-001831-30), in subjects with hereditary transthyretin-mediated amyloidosis polyneuropathy (hATTR-PN). For more information, please visit http://www.neuro-ttransform.com/.\\n\\nDetailed Description\\nThis study was a multicenter, open-label study in up to 168 participants, who were randomized to receive subcutaneous (SC) injections of either eplontersen once every 4 weeks or inotersen once a week. Participants also received daily supplemental doses of the recommended daily allowance of vitamin A. Participants included in the inotersen reference arm crossed over to eplontersen at Week 37 after completing the Week 35 assessments.\u0027, \u0027Title\u0027: \u0027A Phase 3 Global, Open-Label, Randomized Study to Evaluate the Efficacy and Safety of ION-682884 in Patients With Hereditary Transthyretin-Mediated Amyloid Polyneuropathy\u0027, \u0027SourceLinkout\u0027: \u0027https://clinicaltrials.gov/show/NCT04136184\u0027, \u0027Gender\u0027: \u0027All\u0027, \u0027Registry\u0027: \u0027ClinicalTrials.gov\u0027, \u0027EndDate\u0027: neo4j.time.Date(2023, 7, 12), \u0027DimensionsURL\u0027: \u0027https://app.dimensions.ai/details/clinical_trial/NCT04136184\u0027, \u0027minAgeYears\u0027: 18.0, \u0027StartDate\u0027: neo4j.time.Date(2019, 12, 11), \u0027RecruitmentStatus\u0027: \u0027Completed\u0027, \u0027AltmetricAttentionScore\u0027: 806.0, \u0027StartYear\u0027: 2019, \u0027TrialID\u0027: \u0027NCT04136184\u0027, \u0027CompletionYear\u0027: 2023, \u0027Acronym\u0027: \u0027\u0027, \u0027maxAgeYears\u0027: 82.0}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "71256", "label": "Condition", "shape": "dot", "title": "ID: 71256\nLabels: Condition\nProperties: {\u0027name\u0027: \u0027hereditary transthyretin-mediated amyloid polyneuropathy\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "3611", "label": "ClinicalTrial", "shape": "dot", "title": "ID: 3611\nLabels: ClinicalTrial\nProperties: {\u0027Intervention\u0027: \u0027AMG 510 (Drug), Docetaxel (Drug)\u0027, \u0027Phase\u0027: \u0027Phase 3\u0027, \u0027StudyType\u0027: \u0027Interventional\u0027, \u0027NumberOfParticipants\u0027: 345, \u0027BriefTitle\u0027: \u0027Study to Compare AMG 510 \"Proposed INN Sotorasib\" With Docetaxel in Non Small Cell Lung Cancer (NSCLC) (CodeBreak 200).\u0027, \u0027Abstract\u0027: \u0027A Phase 3 Study to Compare AMG 510 with Docetaxel in Non Small Cell Lung Cancer (NSCLC) subjects with KRAS p. G12c mutation\u0027, \u0027Title\u0027: \u0027A Phase 3 Multicenter, Randomized, Open Label, Active-controlled, Study of AMG 510 Versus Docetaxel for the Treatment of Previously Treated Locally Advanced and Unresectable or Metastatic NSCLC Subjects With Mutated KRAS p.G12C\u0027, \u0027SourceLinkout\u0027: \u0027https://clinicaltrials.gov/show/NCT04303780\u0027, \u0027Gender\u0027: \u0027All\u0027, \u0027Registry\u0027: \u0027ClinicalTrials.gov\u0027, \u0027EndDate\u0027: neo4j.time.Date(2026, 4, 27), \u0027DimensionsURL\u0027: \u0027https://app.dimensions.ai/details/clinical_trial/NCT04303780\u0027, \u0027minAgeYears\u0027: 18.0, \u0027StartDate\u0027: neo4j.time.Date(2020, 6, 4), \u0027RecruitmentStatus\u0027: \u0027Active, not recruiting\u0027, \u0027AltmetricAttentionScore\u0027: 788.0, \u0027StartYear\u0027: 2020, \u0027TrialID\u0027: \u0027NCT04303780\u0027, \u0027CompletionYear\u0027: 2026, \u0027Acronym\u0027: \u0027\u0027, \u0027maxAgeYears\u0027: 100.0}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "3621", "label": "Condition", "shape": "dot", "title": "ID: 3621\nLabels: Condition\nProperties: {\u0027name\u0027: \u0027kras p, g12c mutated /advanced metastatic nsclc\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "13427", "label": "ClinicalTrial", "shape": "dot", "title": "ID: 13427\nLabels: ClinicalTrial\nProperties: {\u0027Intervention\u0027: \u0027Atogepant 30 mg (Drug), Atogepant 60 mg (Drug), Placebo (Drug)\u0027, \u0027Phase\u0027: \u0027Phase 3\u0027, \u0027StudyType\u0027: \u0027Interventional\u0027, \u0027NumberOfParticipants\u0027: 778, \u0027BriefTitle\u0027: \u0027Efficacy, Safety, and Tolerability of Atogepant for the Prevention of Chronic Migraine\u0027, \u0027Abstract\u0027: \u0027This study evaluated the efficacy, safety and tolerability of atogepant in participants with chronic migraine. This study included a 12-week treatment period.\u0027, \u0027Title\u0027: \u0027A Phase 3, Multicenter, Randomized, Double-Blind, Placebo-Controlled, Parallel-Group Study to Evaluate the Efficacy, Safety, and Tolerability of Atogepant for the Prevention of Chronic Migraine (Progress)\u0027, \u0027SourceLinkout\u0027: \u0027https://clinicaltrials.gov/show/NCT03855137\u0027, \u0027Gender\u0027: \u0027All\u0027, \u0027Registry\u0027: \u0027ClinicalTrials.gov\u0027, \u0027EndDate\u0027: neo4j.time.Date(2022, 1, 20), \u0027DimensionsURL\u0027: \u0027https://app.dimensions.ai/details/clinical_trial/NCT03855137\u0027, \u0027minAgeYears\u0027: 18.0, \u0027StartDate\u0027: neo4j.time.Date(2019, 3, 11), \u0027RecruitmentStatus\u0027: \u0027Completed\u0027, \u0027AltmetricAttentionScore\u0027: 784.0, \u0027StartYear\u0027: 2019, \u0027TrialID\u0027: \u0027NCT03855137\u0027, \u0027CompletionYear\u0027: 2022, \u0027Acronym\u0027: \u0027\u0027, \u0027maxAgeYears\u0027: 80.0}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "84517", "label": "Condition", "shape": "dot", "title": "ID: 84517\nLabels: Condition\nProperties: {\u0027name\u0027: \u0027chronic migraine\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "58023", "label": "ClinicalTrial", "shape": "dot", "title": "ID: 58023\nLabels: ClinicalTrial\nProperties: {\u0027Intervention\u0027: \u0027Placebo (Biological), Risankizumab (Biological)\u0027, \u0027Phase\u0027: \u0027Phase 3\u0027, \u0027StudyType\u0027: \u0027Interventional\u0027, \u0027NumberOfParticipants\u0027: 964, \u0027BriefTitle\u0027: \u0027A Study Comparing Risankizumab to Placebo in Participants With Active Psoriatic Arthritis (PsA) Who Have a History of Inadequate Response to or Intolerance to at Least One Disease Modifying Anti-Rheumatic Drug (DMARD) Therapy\u0027, \u0027Abstract\u0027: \u0027The purpose of this study is to compare the safety and efficacy of risankizumab versus placebo in participants with moderately to severely active psoriatic arthritis (PsA).\\n\\nDetailed Description\\nThe study consists of a Screening Period (approximately 35 days), Period 1, Period 2, and a 20-week Follow-up Period. Period 1 is a 24-week randomized, double-blind, placebo-controlled, parallel-group treatment period. Period 2 is the long-term treatment period and starts at Week 24. To maintain the blind to the original treatment allocation, treatment at the Week 24 Visit is blinded: participants randomized to placebo receive blinded risankizumab 150 mg, and participants randomized to risankizumab receive blinded placebo. At Week 28 and for the remaining dosing visits (to Week 316), all participants are to receive open-label risankizumab 150 mg every 12 weeks. Participants will remain blinded to the original randomization allocation for the duration of the study. The total study duration is 336 weeks including a telephone call 140 days (20 weeks) after last dose of study drug.\u0027, \u0027Title\u0027: \u0027A Phase 3, Randomized, Double-Blind, Study Comparing Risankizumab to Placebo in Subjects With Active Psoriatic Arthritis (PsA) Who Have a History of Inadequate Response to or Intolerance to at Least One Disease Modifying Anti-Rheumatic Drug (DMARD) Therapy (KEEPsAKE 1)\u0027, \u0027SourceLinkout\u0027: \u0027https://clinicaltrials.gov/show/NCT03675308\u0027, \u0027Gender\u0027: \u0027All\u0027, \u0027Registry\u0027: \u0027ClinicalTrials.gov\u0027, \u0027EndDate\u0027: neo4j.time.Date(2026, 9, 28), \u0027DimensionsURL\u0027: \u0027https://app.dimensions.ai/details/clinical_trial/NCT03675308\u0027, \u0027minAgeYears\u0027: 18.0, \u0027StartDate\u0027: neo4j.time.Date(2019, 3, 25), \u0027RecruitmentStatus\u0027: \u0027Active, not recruiting\u0027, \u0027AltmetricAttentionScore\u0027: 775.0, \u0027StartYear\u0027: 2019, \u0027TrialID\u0027: \u0027NCT03675308\u0027, \u0027CompletionYear\u0027: 2026, \u0027Acronym\u0027: \u0027KEEPsAKE 1\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "58025", "label": "Condition", "shape": "dot", "title": "ID: 58025\nLabels: Condition\nProperties: {\u0027name\u0027: \u0027psoriatic arthritis\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "68703", "label": "ClinicalTrial", "shape": "dot", "title": "ID: 68703\nLabels: ClinicalTrial\nProperties: {\u0027Intervention\u0027: \u0027Empagliflozin (Drug), Matching placebo (Drug)\u0027, \u0027Phase\u0027: \u0027Phase 3\u0027, \u0027StudyType\u0027: \u0027Interventional\u0027, \u0027NumberOfParticipants\u0027: 6609, \u0027BriefTitle\u0027: \u0027EMPA-KIDNEY (The Study of Heart and Kidney Protection With Empagliflozin)\u0027, \u0027Abstract\u0027: \u0027The primary aim of the study is to investigate the effect of empagliflozin on kidney disease progression or cardiovascular death versus placebo on top of standard of care in patients with pre-existing chronic kidney disease. After completion of the interventional part of the study (primary study completion) a subset of participants will be followed up in a post-trial observational (non-interventional) manner for cardio-renal outcomes (estimated study completion date).\u0027, \u0027Title\u0027: \u0027A Multicentre International Randomized Parallel Group Double-blind Placebo-controlled Clinical Trial of EMPAgliflozin Once Daily to Assess Cardio-renal Outcomes in Patients With Chronic KIDNEY Disease\u0027, \u0027SourceLinkout\u0027: \u0027https://clinicaltrials.gov/show/NCT03594110\u0027, \u0027Gender\u0027: \u0027All\u0027, \u0027Registry\u0027: \u0027ClinicalTrials.gov\u0027, \u0027EndDate\u0027: neo4j.time.Date(2025, 1, 31), \u0027DimensionsURL\u0027: \u0027https://app.dimensions.ai/details/clinical_trial/NCT03594110\u0027, \u0027minAgeYears\u0027: 18.0, \u0027StartDate\u0027: neo4j.time.Date(2019, 1, 31), \u0027RecruitmentStatus\u0027: \u0027Active, not recruiting\u0027, \u0027AltmetricAttentionScore\u0027: 734.0, \u0027StartYear\u0027: 2019, \u0027TrialID\u0027: \u0027NCT03594110\u0027, \u0027CompletionYear\u0027: 2025, \u0027Acronym\u0027: \u0027\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "68705", "label": "Condition", "shape": "dot", "title": "ID: 68705\nLabels: Condition\nProperties: {\u0027name\u0027: \u0027chronic kidney disease\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "29382", "label": "ClinicalTrial", "shape": "dot", "title": "ID: 29382\nLabels: ClinicalTrial\nProperties: {\u0027Intervention\u0027: \u0027Sotorasib (Drug)\u0027, \u0027Phase\u0027: \u0027Phase 2\u0027, \u0027StudyType\u0027: \u0027Interventional\u0027, \u0027NumberOfParticipants\u0027: 42, \u0027BriefTitle\u0027: \u0027A Study of Sotorasib (AMG 510) in Participants With Stage IV NSCLC Whose Tumors Harbor a KRAS p.G12C Mutation in Need of First-line Treatment\u0027, \u0027Abstract\u0027: \u0027The main objective of this study is to evaluate the tumor objective response rate (ORR) assessed by Response Evaluation Criteria in Solid Tumors (RECIST) 1.1 criteria in participants who receive sotorasib at either 960 mg daily or 240 mg daily whose tumors are programmed death-ligand 1 (PD-L1) Tumor Proportion Score (TPS) \u003c 1% and/or harbor a serine/threonine kinase 11 (STK11) co-mutation, in a subgroup of participants with PD-L1 \u003c 1% and in a subgroup of participants with STK11 co-mutation.\u0027, \u0027Title\u0027: \u0027A Phase 2, Multicenter, Open-label Study of Sotorasib (AMG 510) in Subjects With Stage IV NSCLC Whose Tumors Harbor a KRAS G12C Mutation in Need of First-line Treatment (CodeBreaK 201)\u0027, \u0027SourceLinkout\u0027: \u0027https://clinicaltrials.gov/show/NCT04933695\u0027, \u0027Gender\u0027: \u0027All\u0027, \u0027Registry\u0027: \u0027ClinicalTrials.gov\u0027, \u0027EndDate\u0027: neo4j.time.Date(2024, 11, 14), \u0027DimensionsURL\u0027: \u0027https://app.dimensions.ai/details/clinical_trial/NCT04933695\u0027, \u0027minAgeYears\u0027: 18.0, \u0027StartDate\u0027: neo4j.time.Date(2022, 1, 28), \u0027RecruitmentStatus\u0027: \u0027Active, not recruiting\u0027, \u0027AltmetricAttentionScore\u0027: 730.0, \u0027StartYear\u0027: 2022, \u0027TrialID\u0027: \u0027NCT04933695\u0027, \u0027CompletionYear\u0027: 2024, \u0027Acronym\u0027: \u0027CodeBreaK201\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "81036", "label": "Condition", "shape": "dot", "title": "ID: 81036\nLabels: Condition\nProperties: {\u0027name\u0027: \u0027non-small cell lung cancer\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "29870", "label": "ClinicalTrial", "shape": "dot", "title": "ID: 29870\nLabels: ClinicalTrial\nProperties: {\u0027Intervention\u0027: \u0027Amivantamab (Drug), Osimertinib (Drug), Lazertinib (Drug), Placebo (Drug)\u0027, \u0027Phase\u0027: \u0027Phase 3\u0027, \u0027StudyType\u0027: \u0027Interventional\u0027, \u0027NumberOfParticipants\u0027: 1074, \u0027BriefTitle\u0027: \u0027A Study of Amivantamab and Lazertinib Combination Therapy Versus Osimertinib in Locally Advanced or Metastatic Non-Small Cell Lung Cancer\u0027, \u0027Abstract\u0027: \u0027The purpose of this study is to assess the efficacy of the amivantamab and lazertinib combination, compared with osimertinib, in participants with epidermal growth factor receptor (EGFR) mutation (Exon 19 deletions [Exon 19del] or Exon 21 L858R substitution) positive, locally advanced or metastatic non-small cell lung cancer (NSCLC).\\n\\nDetailed Description\\nWorldwide, lung cancer is the most commonly diagnosed cancer. In NSCLC the most prevalent actionable driver mutations result in the activation of epidermal growth factor receptor (EGFR). Osimertinib and Lazertinib are EGFR tyrosine kinase inhibitors (TKIs). Amivantamab is a novel bispecific antibody that targets the extracellular domain of both EGFR and MET and can inhibit tumor growth driven by EGFR and mesenchymal-epithelial transition (MET) receptors. Lazertinib inhibits primary activating Exon 19dell and Exon 21 L858R substitution EGFR mutations, and the EGFR T790M+ resistance mutation. The hypothesis is that the amivantamab and lazertinib combination (Arm A) will demonstrate superior PFS compared with single-agent osimertinib (Arm B). The study consists of 3 phases: Screening Phase, Treatment Phase and Follow-up Phase. Participants will undergo response evaluation criteria in solid tumors (RECIST 1.1), pharmacokinetics, and safety evaluations (adverse events, laboratory tests, vital sign measurements, physical examinations).\u0027, \u0027Title\u0027: \u0027A Phase 3, Randomized Study of Amivantamab and Lazertinib Combination Therapy Versus Osimertinib Versus Lazertinib as First-Line Treatment in Patients With EGFR-Mutated Locally Advanced or Metastatic Non-Small Cell Lung Cancer.\u0027, \u0027SourceLinkout\u0027: \u0027https://clinicaltrials.gov/show/NCT04487080\u0027, \u0027Gender\u0027: \u0027All\u0027, \u0027Registry\u0027: \u0027ClinicalTrials.gov\u0027, \u0027EndDate\u0027: neo4j.time.Date(2027, 6, 9), \u0027DimensionsURL\u0027: \u0027https://app.dimensions.ai/details/clinical_trial/NCT04487080\u0027, \u0027minAgeYears\u0027: 18.0, \u0027StartDate\u0027: neo4j.time.Date(2020, 9, 30), \u0027RecruitmentStatus\u0027: \u0027Active, not recruiting\u0027, \u0027AltmetricAttentionScore\u0027: 729.0, \u0027StartYear\u0027: 2020, \u0027TrialID\u0027: \u0027NCT04487080\u0027, \u0027CompletionYear\u0027: 2027, \u0027Acronym\u0027: \u0027MARIPOSA\u0027}"}, {"color": "#ADD8E6", "font": {"color": "white"}, "id": "69911", "label": "Condition", "shape": "dot", "title": "ID: 69911\nLabels: Condition\nProperties: {\u0027name\u0027: \u0027carcinoma, non-small-cell lung\u0027}"}]);
+                  edges = new vis.DataSet([{"color": "#B0C4DE", "from": "86980", "label": "HAS_CONDITION", "title": "HAS_CONDITION", "to": "53"}, {"color": "#B0C4DE", "from": "41467", "label": "HAS_CONDITION", "title": "HAS_CONDITION", "to": "41602"}, {"color": "#B0C4DE", "from": "86301", "label": "HAS_CONDITION", "title": "HAS_CONDITION", "to": "63484"}, {"color": "#B0C4DE", "from": "85500", "label": "HAS_CONDITION", "title": "HAS_CONDITION", "to": "63484"}, {"color": "#B0C4DE", "from": "58584", "label": "HAS_CONDITION", "title": "HAS_CONDITION", "to": "11913"}, {"color": "#B0C4DE", "from": "58026", "label": "HAS_CONDITION", "title": "HAS_CONDITION", "to": "58028"}, {"color": "#B0C4DE", "from": "35019", "label": "HAS_CONDITION", "title": "HAS_CONDITION", "to": "87860"}, {"color": "#B0C4DE", "from": "25473", "label": "HAS_CONDITION", "title": "HAS_CONDITION", "to": "25474"}, {"color": "#B0C4DE", "from": "25473", "label": "HAS_CONDITION", "title": "HAS_CONDITION", "to": "25476"}, {"color": "#B0C4DE", "from": "25473", "label": "HAS_CONDITION", "title": "HAS_CONDITION", "to": "25477"}, {"color": "#B0C4DE", "from": "25473", "label": "HAS_CONDITION", "title": "HAS_CONDITION", "to": "88202"}, {"color": "#B0C4DE", "from": "61158", "label": "HAS_CONDITION", "title": "HAS_CONDITION", "to": "54189"}, {"color": "#B0C4DE", "from": "41466", "label": "HAS_CONDITION", "title": "HAS_CONDITION", "to": "41602"}, {"color": "#B0C4DE", "from": "71253", "label": "HAS_CONDITION", "title": "HAS_CONDITION", "to": "71256"}, {"color": "#B0C4DE", "from": "3611", "label": "HAS_CONDITION", "title": "HAS_CONDITION", "to": "3621"}, {"color": "#B0C4DE", "from": "13427", "label": "HAS_CONDITION", "title": "HAS_CONDITION", "to": "84517"}, {"color": "#B0C4DE", "from": "58023", "label": "HAS_CONDITION", "title": "HAS_CONDITION", "to": "58025"}, {"color": "#B0C4DE", "from": "68703", "label": "HAS_CONDITION", "title": "HAS_CONDITION", "to": "68705"}, {"color": "#B0C4DE", "from": "29382", "label": "HAS_CONDITION", "title": "HAS_CONDITION", "to": "81036"}, {"color": "#B0C4DE", "from": "29870", "label": "HAS_CONDITION", "title": "HAS_CONDITION", "to": "69911"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"forceAtlas2Based": {"gravitationalConstant": -500, "centralGravity": 0.01, "springLength": 100, "springConstant": 0.08, "avoidOverlap": 0.5}, "minVelocity": 0.75, "solver": "forceAtlas2Based"}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
